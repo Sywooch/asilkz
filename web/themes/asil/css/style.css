@@ -94,32 +94,34 @@ background: rgba(248, 203, 87, 0) url(../img/hover.png) no-repeat;
 }
 .content {
   width: 100%;
-  /* overflow: hidden; */
 }
 .side_bar {
   width: 300px;
   float: left;
 }
+.product .title{
+margin-bottom:0px;
+}
 .side_bar h3 {
-  font-family: "PTSansBold";
-  font-size: 20px;
-  color: #4d4d4d;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #cccccc;
-  margin-bottom: 3px;
+    font-family: "PTSansBold";
+    font-size: 18px;
+    color: #4d4d4d;
+    line-height: 24px;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 3px;
+    margin-left: 14px;
+}
+.side_bar ul {
   margin-left: 14px;
 }
 .side_bar ul {
   margin-left: 14px;
     margin-bottom: 40px;
 }
-.side_bar ul {
-  margin-left: 14px;
-}
 .side_bar ul li {
-  overflow: hidden;
-  margin-bottom: 10px;
-    line-height: 36px;
+    overflow: hidden;
+    margin-bottom: 2px;
+    line-height: 35px;
 }
 .side_bar ul li a {
   font-family: "PTSansRegular";
@@ -155,27 +157,44 @@ background: rgba(248, 203, 87, 0) url(../img/hover.png) no-repeat;
   margin-left: 42px;
   float: left;
 }
-.content_center h2 {
-  font-family: "PTSansBold";
-  font-size: 20px;
-  color: #4d4d4d;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #cccccc;
-  margin-bottom: 9px;
+.title h2 {
+    font-family: "PTSansBold";
+    font-size: 20px;
+    color: #4d4d4d;
+    line-height: 25px;
 }
-.title span {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-bottom: 1px solid #ccc;
-  font-family: "PTSansRegular";
-  font-size: 17px;
-  color: #4d4d4d;
+.side_bar ul li:first-child {
+    margin-top: 7px;
+}
+.title a {
+    font-family: "PTSansRegular";
+    font-size: 17px;
+    color: #4d4d4d;
+    line-height: 24px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.title a.active{
+	font-family:"PTSansBold";
+	text-decoration:none;
+	font-size: 20px;
+}
+.side_bar ul li a.active_sb{
+	text-decoration:underline;
+}
+
+.title {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 7px;
 }
 .korzina_zakaz {
-  width: 100%;
-  margin-bottom: 17px;
-  overflow: hidden;
+    width: 100%;
+    margin-bottom: 11px;
+    overflow: hidden;
+}
+.product .korzina_zakaz{
+	margin-top:9px;
 }
 .korzina {
     width: 240px;
@@ -234,9 +253,7 @@ input.si {
 }
 ul.pord_spisok li {
     width: 100%;
-    /* height: 100px; */
     border-bottom: 1px solid #ccc;
-    margin-bottom: 9px;
     overflow: hidden;
     padding: 10px 0;
 }
@@ -292,6 +309,7 @@ span.name_pr {
     font-size: 18px;
     color: #368dbe;
     line-height: 23px;
+    height: 31px;
 }
 .minus {
     float: left;
@@ -391,55 +409,55 @@ ul.vrach li {
   line-height: 20px;
 }
 ul.oplata {
-  margin-top: 14px;
+    margin-top: 14px;
 }
-ul.oplata li {
+.oplata li {
   font-family: Calibri;
   font-size: 16px;
   margin-bottom: 5px;
   font-weight: Lighter;
   color: #696969;
 }
-ul.oplata li span {
+.oplata li span {
   font-weight: bold;
   margin-right: 5px;
   color: #7fab68;
 }
-ul.akcii li {
+.akcii li {
   float: left;
   width: 201px;
   margin-right: 16px;
   text-align: center;
   margin-bottom: 30px;
 }
-ul.akcii li:nth-child(3n) {
+.akcii li:nth-child(3n) {
   margin-right: 0px;
 }
-ul.akcii li img {
+.akcii li img {
   margin: 0px 0px 8px;
 }
-ul.akcii li span {
+.akcii li span {
   font-family: "Arial";
   font-size: 16px;
   color: #4b4e4f;
 }
-ul.consult li {
+.consult li {
   width: 191px;
   height: 244px;
   float: left;
   margin-left: 0px;
   margin-right: 31px;
 }
-ul.consult li:nth-child(3n) {
+.consult li:nth-child(3n) {
   margin-right: 0px;
 }
-ul.statii li {
+.statii li {
   float: left;
   width: 208px;
   margin-right: 16px;
   margin-bottom: 30px;
 }
-ul.statii li:nth-child(3n) {
+.statii li:nth-child(3n) {
   margin-right: 0px;
 }
 .title_stati {
@@ -448,7 +466,7 @@ ul.statii li:nth-child(3n) {
   font-size: 17px;
   margin-bottom: 2px;
 }
-ul.statii li span {
+.statii li span {
   float: right;
 }
 .modal_div {

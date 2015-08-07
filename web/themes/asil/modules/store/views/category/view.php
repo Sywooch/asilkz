@@ -1,15 +1,19 @@
 <?php
 /** @var $this \yii\web\View */
 /** @var $q string */
+/** @var $route string */
 /** @var $category \app\modules\store\models\Category */
 /** @var $products \app\modules\store\models\Product[] */
-$this->title = 'Товары - категории';
+use yii\helpers\Url;
+use app\modules\store\models\Category;
+use app\modules\store\models\Manufacturer;
+$this->title = $title;
 $theme =  $this->theme;
 \app\modules\store\assets\BasketAsset::register($this);
 ?>
-<div class="title rel">
-    <h2>Работа с каталогом ветснаб</h2>
-    <span>Работа с каталогом производителей</span>
+<div class="title ">
+    <a href="<?=Url::to(Category::getFirstLink())?>" class="fl_l <?php if($route == 'store/category/view') echo 'active'?>">Работа с каталогом ветснаб</a>
+    <a href="<?=Url::to(Manufacturer::getFirstLink())?>" class="fl_r <?php if($route == 'store/category/brand') echo 'active'?>">Работа с каталогом производителей</a>
 </div>
 <div class="korzina_zakaz">
     <div class="korzina">

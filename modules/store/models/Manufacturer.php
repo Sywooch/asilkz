@@ -5,7 +5,9 @@ namespace app\modules\store\models;
 use Yii;
 use app\modules\cms\components\TranslitBehavior;
 use app\modules\cms\models\Image;
+use yii\db\ActiveQuery;
 use yii\helpers\ArrayHelper;
+use yii\helpers\Url;
 
 /**
  * This is the model class for table "{{%store_manufacturer}}".
@@ -64,7 +66,7 @@ class Manufacturer extends \yii\db\ActiveRecord
 
     public function getPath()
     {
-        return Url::to(['/store/manufacturer/view','alias'=>$this->alias]);
+        return Url::to(['/store/category/brand','alias'=>$this->alias]);
     }
 
     public function getImage()
@@ -96,5 +98,39 @@ class Manufacturer extends \yii\db\ActiveRecord
     public static function getCount()
     {
         return self::find()->count();
+    }
+
+    /**
+     * @return Category[]
+     */
+    public static function getNavigationData()
+    {
+        $items = self::find()->visible()->orderBy('position ASC')->all();
+        return $items;
+    }
+
+    public static function find()
+    {
+        return new ManufacturerQuery(get_called_class());
+    }
+
+    public function getProducts()
+    {
+        return $this->hasMany(Product::className(),['manufacturerId'=>'id']);
+    }
+
+    public static function getFirstLink()
+    {
+        $item = self::find()->orderBy(['position'=>SORT_ASC])->visible()->one();
+        return ['/store/category/brand','alias'=>$item->alias];
+    }
+}
+
+class ManufacturerQuery extends ActiveQuery
+{
+    public function visible()
+    {
+        $this->andWhere(['visible'=>Manufacturer::VISIBLE_ON]);
+        return $this;
     }
 }

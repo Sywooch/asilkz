@@ -50,7 +50,7 @@ $theme = $this->theme;
                     <li class="client"><a href="<?=Url::to(['/cms/default/page','path'=>'optovim-klientam'])?>">ОПТОВЫМ КЛИЕНТАМ </a></li>
                     <li class="akci"><a href="<?=Url::to(['/cms/article/list','type'=>'stock'])?>">АКЦИИ </a></li>
                     <li class="oplata"><a href="<?=Url::to(['/cms/default/page','path'=>'oplata-i-dostavka'])?>">ОПЛАТА И ДОСТАВКА </a></li>
-                    <li class="prod"><a href="<?=Url::to(['/store/category/view','alias'=>'antibiotiki'])?>"> ПРОДУКЦИЯ </a></li>
+                    <li class="prod"><a href="<?=Url::to(\app\modules\store\models\Category::getFirstLink())?>"> ПРОДУКЦИЯ </a></li>
                     <li class="stat"><a href="<?=Url::to(['/cms/article/list','type'=>'article'])?>"> СТАТЬИ </a></li>
                     <li class="cont"><a href="<?=Url::to(['/cms/default/page','path'=>'kontakti'])?>"> КОНТАКТЫ </a></li>
                 </ul>
@@ -60,15 +60,7 @@ $theme = $this->theme;
 <div class="content">
     <div class="cr">
         <div class="side_bar">
-            <h3>Каталог</h3>
-            <ul>
-                <?php foreach(\app\modules\store\models\Category::getNavigationData() as $item):?>
-                <li>
-                    <div class="catalog_li"><img src="<?=$item->image->resize('33x30')?>"></div>
-                    <a href="<?=$item->path?>"><?=$item->title?></a>
-                </li>
-                <?php endforeach?>
-            </ul>
+            <?=\app\modules\store\widgets\CategoryNav::widget()?>
 
             <?php if( ($items = \app\modules\cms\models\Reviews::getAll()) ):?>
             <h3>Отзывы</h3>

@@ -350,15 +350,13 @@ background-position:-44px -44px;
 }
 
 .sliderContent .item {
-    position: absolute;
-    width: 260px;
-    min-height: 200px;
-    background: #fff;
-    overflow: hidden;
-    padding: 10px;
-    border: 1px dashed #ccc;
+  position: absolute;
+  width: 260px;
+  /* height: 350px; */
+  background: #fff;
+  padding: 10px;
+  border: 1px dashed #ccc;
 }
-
 .sliderBullets {
 position:absolute;
 bottom:0;

@@ -122,6 +122,12 @@ class Category extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Product::className(),['categoryId'=>'id']);
     }
+
+    public static function getFirstLink()
+    {
+        $item = self::find()->orderBy(['position'=>SORT_ASC])->visible()->one();
+        return ['/store/category/view','alias'=>$item->alias];
+    }
 }
 
 class CategoryQuery extends ActiveQuery

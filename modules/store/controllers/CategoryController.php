@@ -10,6 +10,7 @@ namespace app\modules\store\controllers;
 
 
 use app\modules\store\models\Category;
+use app\modules\store\models\Manufacturer;
 use app\modules\store\models\Product;
 use yii\web\Controller;
 use yii\web\HttpException;
@@ -35,10 +36,35 @@ class CategoryController extends Controller{
         {
             $products = $category->products;
         }
+        $route = $this->route;
+        $title = 'Товары - Категории - '.$category->title;
 
-        return $this->render('view',['category'=>$category,'products'=>$products,'q'=>$q]);
+        return $this->render('view',['category'=>$category,'products'=>$products,'q'=>$q,'route'=>$route,'title'=>$title]);
     }
 
+    public function actionBrand($alias)
+    {
+        /** @var $category Category */
+
+        $category = Manufacturer::find()->where(['alias'=>$alias])->one();
 
 
+        if(!$category)
+        {
+            throw new HttpException(404,'Категория товара не найдена');
+        }
+
+        $q = \Yii::$app->request->get('q');
+        if(!empty($q))
+        {
+            $products = Product::find()->where(['manufacturerId'=>$category->id])->visible()->andWhere(['like','title',$q])->all();
+        }
+        else
+        {
+            $products = $category->products;
+        }
+        $route = $this->route;
+        $title = 'Товары - Производители - '.$category->title;
+        return $this->render('view',['category'=>$category,'products'=>$products,'q'=>$q,'route'=>$route,'title'=>$title]);
+    }
 }
