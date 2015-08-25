@@ -81,7 +81,7 @@ background: rgba(248, 203, 87, 0) url(../img/hover.png) no-repeat;
   background-repeat: no-repeat;
 }
  .menu ul li a {
-        color: #fff;
+    color: #fff;
     font-family: 'PtSansbold';
     font-weight: bold;
     font-size: 13px;
