@@ -88,10 +88,11 @@ background: rgba(248, 203, 87, 0) url(../img/hover.png) no-repeat;
     display: block;
     letter-spacing: 0.5px;
     float: left;
-    padding-right: 41px;	
+    padding-right: 41px;
+	
 
 }
-.menu ul li a:first-child {
+.menu ul li:first-child a {
     padding-left: 25px;
 }
 .menu ul li:last-child {
