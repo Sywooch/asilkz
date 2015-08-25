@@ -61,12 +61,7 @@
   height: 74px;
   background-repeat: no-repeat;
 }
-.menu ul li a {
-  color: #fff;
-  font-family: Arial;
-  font-weight: bold;
-  font-size: 12px;
-}
+
 .menu ul li:hover{
 background: rgba(248, 203, 87, 0) url(../img/hover.png) no-repeat;
   background-size: 100% 68px;
@@ -80,17 +75,30 @@ background: rgba(248, 203, 87, 0) url(../img/hover.png) no-repeat;
 }
 .menu ul li {
   float: left;
-  color: #fff;
   background-image: url(../img/razdelitel.png);
   background-position: right;
   line-height: 50px;
   background-repeat: no-repeat;
-  padding: 0 32px 0px 14px;
+}
+ .menu ul li a {
+        color: #fff;
+    font-family: 'PtSansbold';
+    font-weight: bold;
+    font-size: 13px;
+    display: block;
+    letter-spacing: 0.5px;
+    float: left;
+    padding-right: 41px;	
+
+}
+.menu ul li a:first-child {
+    padding-left: 25px;
 }
 .menu ul li:last-child {
-  padding-right: 0px;
   background-image: none;
-  padding-left: 10px;
+}
+.menu ul li:last-child a {
+    padding-right: 0px;
 }
 .content {
   width: 100%;
