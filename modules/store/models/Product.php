@@ -137,6 +137,12 @@ class Product extends \yii\db\ActiveRecord
         }
         return $obj;
     }
+
+    public function imageSrc($size)
+    {
+        $image = $this->image;
+        return $image ? $image->resize($size) : 'http://placehold.it/'.$size;
+    }
 }
 
 class ProductQuery extends ActiveQuery

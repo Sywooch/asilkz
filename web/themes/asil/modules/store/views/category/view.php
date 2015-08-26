@@ -36,7 +36,7 @@ $theme =  $this->theme;
         <li class="_product-item" data-product-id="<?=$product->id?>">
             <div class="opisanie">
                 <div class="img_pr">
-                    <img src="<?= $product->image->resize('84x84') ?>" alt=""/>
+                    <img src="<?= $product->imageSrc('84x84') ?>" alt=""/>
                 </div>
 								<span class="name_pr">
 									<?=$product->title?>
