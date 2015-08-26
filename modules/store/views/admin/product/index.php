@@ -28,7 +28,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 'format'=>'html',
                 'value'=>function($model)
                 {
-                    return Html::img($model->image->resize('75x75'));
+                    if($model->image)
+                        return Html::img($model->image->resize('75x75'));
                 }
             ],
             [
