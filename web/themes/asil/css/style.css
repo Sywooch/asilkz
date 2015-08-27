@@ -396,6 +396,16 @@ text-decoration:underline;
 	margin-bottom:10px;
 	margin-left: -15px;
 }
+.etc {
+    height: 30px;
+    display: inline-block;
+    background-color: #61b039;
+    line-height: 31px;
+    color: #fff;
+    padding: 0 15px;
+    font-size: 14px;
+    font-family: 'PtSansRegular';
+}
 ul.cont {
   margin-bottom: 25px;
 }
