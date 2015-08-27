@@ -61,10 +61,8 @@
   height: 74px;
   background-repeat: no-repeat;
 }
-
-.menu ul li:hover{
-background: rgba(248, 203, 87, 0) url(../img/hover.png) no-repeat;
-  background-size: 100% 68px;
+.menu ul li:hover a,.menu ul li.active a{
+	color: #F9CB02;
 }
 .menu ul {
   background-image: url(../img/menu.png);
@@ -385,18 +383,18 @@ text-decoration:underline;
   text-align: justify;
   margin-bottom:8px;
 }
-.text ul{
+.text .ul{
 	list-style-type:disc;
 	-webkit-padding-start:30px;
-	margin-left:-30px;
 }
-.text ul li{
-	  font-family: "PTSansRegular";
-  font-size: 14px;
-  line-height: 18px;
-  color: #4d4d4d;
-  text-align: justify;
-  margin-bottom:10px;
+.text .ul li{
+	font-family: "PTSansRegular";
+	font-size: 14px;
+	line-height: 18px;
+	color: #4d4d4d;
+	text-align: justify;
+	margin-bottom:10px;
+	margin-left: -15px;
 }
 ul.cont {
   margin-bottom: 25px;
