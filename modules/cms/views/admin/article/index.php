@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                 'header'=>'',
                 'value'=>function($model){
-                    return Html::img($model->image->resize('100x100'));
+                    return Html::img($model->imageSrc('100x100'));
                 },
                 'format'=>'html'
             ],
