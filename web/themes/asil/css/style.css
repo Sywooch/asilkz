@@ -61,15 +61,8 @@
   height: 74px;
   background-repeat: no-repeat;
 }
-.menu ul li a {
-  color: #fff;
-  font-family: Arial;
-  font-weight: bold;
-  font-size: 12px;
-}
-.menu ul li:hover{
-background: rgba(248, 203, 87, 0) url(../img/hover.png) no-repeat;
-  background-size: 100% 68px;
+.menu ul li:hover a,.menu ul li.active a{
+	color: #F9CB02;
 }
 .menu ul {
   background-image: url(../img/menu.png);
@@ -80,17 +73,31 @@ background: rgba(248, 203, 87, 0) url(../img/hover.png) no-repeat;
 }
 .menu ul li {
   float: left;
-  color: #fff;
   background-image: url(../img/razdelitel.png);
   background-position: right;
   line-height: 50px;
   background-repeat: no-repeat;
-  padding: 0 32px 0px 14px;
+}
+ .menu ul li a {
+    color: #fff;
+    font-family: 'PtSansbold';
+    font-weight: bold;
+    font-size: 13px;
+    display: block;
+    letter-spacing: 0.5px;
+    float: left;
+    padding-right: 41px;
+	
+
+}
+.menu ul li:first-child a {
+    padding-left: 25px;
 }
 .menu ul li:last-child {
-  padding-right: 0px;
   background-image: none;
-  padding-left: 10px;
+}
+.menu ul li:last-child a {
+    padding-right: 0px;
 }
 .content {
   width: 100%;
@@ -370,17 +377,41 @@ text-decoration:underline;
 }
 .text p {
   font-family: "PTSansRegular";
-  font-size: 13px;
+  font-size: 14px;
   line-height: 18px;
   color: #4d4d4d;
   text-align: justify;
+  margin-bottom:8px;
+}
+.text .ul{
+	list-style-type:disc;
+	-webkit-padding-start:30px;
+}
+.text .ul li{
+	font-family: "PTSansRegular";
+	font-size: 14px;
+	line-height: 18px;
+	color: #4d4d4d;
+	text-align: justify;
+	margin-bottom:10px;
+	margin-left: -15px;
+}
+.etc {
+    height: 30px;
+    display: inline-block;
+    background-color: #61b039;
+    line-height: 31px;
+    color: #fff;
+    padding: 0 15px;
+    font-size: 14px;
+    font-family: 'PtSansRegular';
 }
 ul.cont {
   margin-bottom: 25px;
 }
 .text img {
   float: left;
-  margin: 0 9px 0px 0;
+  margin: 5px 12px 0px 0;
   border: 1px solid #ccc;
 }
 ul.vrach {
