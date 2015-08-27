@@ -4,6 +4,7 @@
  * User: ivphpan
  * Date: 27.08.15
  * Time: 11:42
+ * @method string imageSrc(string $size = '100x100', string $method = Thumbler::METHOD_NOT_BOXED)
  */
 
 namespace app\modules\cms\components;
@@ -16,7 +17,7 @@ class CmsBehavior extends Behavior{
 
     private $imageThumb = 'http://placehold.it/';
 
-    public function imageSrc($size,$method = Thumbler::METHOD_NOT_BOXED)
+    public function imageSrc($size='100x100',$method = Thumbler::METHOD_NOT_BOXED)
     {
         if(!method_exists($this->owner,'getImage'))
             return $this->imageThumb.$size;

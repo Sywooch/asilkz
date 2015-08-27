@@ -69,7 +69,7 @@ $theme = $this->theme;
                 <div class="sliderContent">
                     <?php foreach($items as $item):?>
                     <div class="item">
-                        <img class="foto_otz" src="<?=$item->image->resize()?>" alt="" />
+                        <img class="foto_otz" src="<?=$item->imageSrc()?>" alt="" />
                         <div class="otzv">
 								<span class="name_cl">
 									<?=$item->name?>

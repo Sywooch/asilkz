@@ -25,7 +25,7 @@ $this->title = Yii::$app->name;
         <div class="item">
             <div class="slid_one">
                 <div class="img_slid">
-                    <img src="<?=$item->image->resize('133x93')?>">
+                    <img src="<?=$item->imageSrc('133x93')?>">
                 </div>
                 <span class="date"><?=Yii::$app->formatter->asDate(strtotime($item->dateCreate))?></span>
                 <div class="slid_txt">
@@ -48,7 +48,7 @@ $this->title = Yii::$app->name;
 <div class="text">
     <?php foreach($items as $item):?>
     <div id="owl-demo2" class="owl-carousel akcii">
-        <div class="item"><img src="<?=$item->image->resize('201x141')?>" alt="Owl Image"></div>
+        <div class="item"><img src="<?=$item->imageSrc('201x141')?>" alt="Owl Image"></div>
         <?php endforeach?>
     </div>
 </div>
@@ -65,7 +65,7 @@ $this->title = Yii::$app->name;
         <div class="item">
             <div class="slid_one">
                 <div class="img_slid">
-                    <img src="<?=$item->image->resize('139x97')?>">
+                    <img src="<?=$item->imageSrc('139x97')?>">
                 </div>
                 <span class="date"><?=Yii::$app->formatter->asDate(strtotime($item->dateCreate))?></span>
                 <div class="slid_txt">

@@ -21,7 +21,7 @@ use yii\helpers\Url;
  * @property integer $visible
  * @property string $dateCreate
  * @property Image $image
- * @method imageSrc
+ * @method string imageSrc(string $size = '100x100', string $method = Thumbler::METHOD_NOT_BOXED)
  */
 class Article extends \yii\db\ActiveRecord
 {
