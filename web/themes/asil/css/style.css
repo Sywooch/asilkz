@@ -387,18 +387,18 @@ text-decoration:underline;
   text-align: justify;
   margin-bottom:8px;
 }
-.text .ul{
-	list-style-type:disc;
-	-webkit-padding-start:30px;
+.text .ul {
+    list-style-type: disc;
+    -webkit-padding-start: 17px;
+    overflow: hidden;
 }
-.text .ul li{
-	font-family: "PTSansRegular";
-	font-size: 14px;
-	line-height: 18px;
-	color: #4d4d4d;
-	text-align: justify;
-	margin-bottom:10px;
-	margin-left: -15px;
+.text .ul li {
+    font-family: "PTSansRegular";
+    font-size: 14px;
+    line-height: 18px;
+    color: #4d4d4d;
+    text-align: justify;
+    margin-bottom: 10px;
 }
 .etc {
     height: 30px;
