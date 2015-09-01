@@ -32,7 +32,7 @@ $(document).ready(function() { // запускаем скрипт после з�
 //1
     $(document).ready(function() {
       $("#owl-demo").owlCarousel({
-        autoPlay: 3000,
+        autoPlay: false,
         items : 4,
         itemsDesktop : [1199,3],
         itemsDesktopSmall : [979,3]
