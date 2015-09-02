@@ -700,12 +700,13 @@ input.modal_f {
     margin-top: 7px;
 }
 .item p {
-  width: 100%;
-  overflow: hidden;
-  font-family: "PTSansItalic";
-  font-size: 14px;
-  color: #4d4d4d;
-  line-height: 15px;
+    width: 100%;
+    overflow: hidden;
+    font-family: "PTSansItalic";
+    font-size: 14px;
+    height: 89px;
+    color: #4d4d4d;
+    line-height: 15px;
 }
 .search a {
     width: 142px;
@@ -790,11 +791,12 @@ input.modal_f {
 }
 a.open_modal.otkrit {
     background-image: url(../img/button.png);
-    width: 160px;
+    width: 142px;
     height: 37px;
     display: block;
-    background-color: #000;
     text-align: center;
     line-height: 37px;
     margin-top: 17px;
+    color: #fff;
+    font-family: "PTSansRegular";
 }
