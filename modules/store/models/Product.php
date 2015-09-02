@@ -48,7 +48,7 @@ class Product extends \yii\db\ActiveRecord
             [['categoryId', 'manufacturerId'], 'required'],
             [['categoryId', 'manufacturerId', 'minCount', 'quantity', 'visible'], 'integer'],
             [['title', 'alias'], 'string', 'max' => 128],
-            [['content'], 'string', 'max' => 300]
+            [['content'], 'string']
         ];
     }
 
