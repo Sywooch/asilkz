@@ -237,21 +237,22 @@
 	white-space: nowrap;
 }
 .fancybox {
-    width: 186px;
-    height: 255px;
-    border: 6px solid #f6f6f6;
+    width: 116px;
+    height: 143px;
+    border: 3px solid #f6f6f6;
     display: block;
-    padding: 6px;
+    padding: 3px;
     float: left;
-    margin-right: 37px;
-    margin-bottom: 44px;
+    margin-right: 14px;
+    margin-left: 15px;
+    margin-bottom: 37px;
     background-color: #fff;
-    box-shadow: inset 0px 0px 8px #A2A0A0;
+    box-shadow: inset 0px 0px 8px #E0D1D1;
 }
 .fancybox img {
     width: 100%;
 }
-.fancybox:last-child {
+.fancybox:nth-child(2n) {
     margin-right: 0px;
 }
 .fancybox-title-outside-wrap {
@@ -288,4 +289,8 @@
 		background-image: url('../images/fancybox_loading@2x.gif');
 		background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/
 	}
+}
+.sertifikat_container {
+    overflow: hidden;
+    margin-top: 9px;
 }
