@@ -26,6 +26,7 @@ class AppAsset extends AssetBundle
         'js/mobilyslider.js',
         'js/owl.carousel.js',
         'js/app.js',
+		'js/jquery.fancybox.pack'
     ];
 
     public $depends = [

@@ -443,10 +443,11 @@ ul.vrach li {
     font-family: "PTSansBold";
 }
 .vrach_dannie img {
-  border-radius: 100px;
-  margin: 0px 0px 10px;
-  display: inline-block;
-  float: none;
+    float: none;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: none;
 }
 .vrach_dannie span {
   font-family: "PTSansRegular";
@@ -501,6 +502,13 @@ ul.vrach.consult li {
 }
 .consult li:nth-child(3n) {
   margin-right: 0px;
+}
+.consult_img {
+    /* width: 200px; */
+    height: 200px;
+    overflow: hidden;
+    border-radius: 118px;
+    margin-bottom: 10px;
 }
 .statii li {
   float: left;

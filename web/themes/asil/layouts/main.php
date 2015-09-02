@@ -86,6 +86,31 @@ $theme = $this->theme;
                     <?php endforeach?>
                 </div>
             </div>
+			<div class="sertifikat">
+				<div class="sertifikat_title">
+					Сертификаты
+				</div>
+				<div class="sertifikat_container">
+					<ul class="sertif">
+						<li><a class="fancybox" rel="gallery" href="img/atlas_b.jpg">
+								<img src="<?=$theme->getUrl('img/opt.jpg')?>"/>
+							</a>
+						</li>
+						<li><a class="fancybox" rel="gallery" href="img/atlas_b.jpg">
+								<img src="<?=$theme->getUrl('img/opt.jpg')?>"/>
+							</a>
+						</li>
+						<li><a class="fancybox" rel="gallery" href="img/atlas_b.jpg">
+								<img src="<?=$theme->getUrl('img/opt.jpg')?>"/>
+							</a>
+						</li>
+						<li><a class="fancybox" rel="gallery" href="img/atlas_b.jpg">
+								<img src="<?=$theme->getUrl('img/opt.jpg')?>"/>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
         </div>
         <?php endif?>
 
