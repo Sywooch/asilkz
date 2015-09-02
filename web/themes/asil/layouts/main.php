@@ -83,7 +83,7 @@ $theme = $this->theme;
                         </div>
                         <p><?=$item->content?></p>
 						<div class="back_otziv">
-							<a href="#modal2" class="open_modal">Осатвить отзыв</a><!-- ссылка с href="#modal1", откроет окно с  id = modal1-->
+							<a href="#modal2" class="open_modal otkrit" >Осатвить отзыв</a><!-- ссылка с href="#modal1", откроет окно с  id = modal1-->
 						</div>
                     </div>
                     <?php endforeach?>
