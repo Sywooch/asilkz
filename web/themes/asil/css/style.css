@@ -81,7 +81,6 @@
  .menu ul li a {
     color: #fff;
     font-family: 'PtSansbold';
-    font-weight: bold;
     font-size: 13px;
     display: block;
     letter-spacing: 0.5px;
@@ -169,6 +168,10 @@ margin-bottom:0px;
     font-size: 20px;
     color: #4d4d4d;
     line-height: 25px;
+    display: inline-block;
+}
+.title.rel span {
+    float: right;
 }
 .side_bar ul li:first-child {
     margin-top: 7px;
@@ -383,18 +386,18 @@ text-decoration:underline;
   text-align: justify;
   margin-bottom:8px;
 }
-.text .ul{
-	list-style-type:disc;
-	-webkit-padding-start:30px;
+.text .ul {
+    list-style-type: disc;
+    -webkit-padding-start: 17px;
+    overflow: hidden;
 }
-.text .ul li{
-	font-family: "PTSansRegular";
-	font-size: 14px;
-	line-height: 18px;
-	color: #4d4d4d;
-	text-align: justify;
-	margin-bottom:10px;
-	margin-left: -15px;
+.text .ul li {
+    font-family: "PTSansRegular";
+    font-size: 14px;
+    line-height: 18px;
+    color: #4d4d4d;
+    text-align: justify;
+    margin-bottom: 10px;
 }
 .etc {
     height: 30px;
@@ -405,6 +408,9 @@ text-decoration:underline;
     padding: 0 15px;
     font-size: 14px;
     font-family: 'PtSansRegular';
+}
+.etc:hover {
+    background-color: #458922;
 }
 ul.cont {
   margin-bottom: 25px;
@@ -420,19 +426,28 @@ ul.vrach {
   margin-bottom: 20px;
 }
 ul.vrach li {
-  width: 212px;
-  height: 244px;
-  float: left;
-  margin-left: 62px;
+    width: 212px;
+    float: left;
+    margin-left: 62px;
+    text-align: center;
 }
 .vrach_dannie {
   text-align: center;
 }
+.vrach_dannie p {
+    text-align: center;
+}
+.vrach_dannie p span {
+    display: block;
+    text-align: center;
+    font-family: "PTSansBold";
+}
 .vrach_dannie img {
-  border-radius: 100px;
-  margin: 0px 0px 10px;
-  display: inline-block;
-  float: none;
+    float: none;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: none;
 }
 .vrach_dannie span {
   font-family: "PTSansRegular";
@@ -474,13 +489,26 @@ ul.oplata {
 }
 .consult li {
   width: 191px;
-  height: 244px;
   float: left;
   margin-left: 0px;
   margin-right: 31px;
 }
+ul.vrach.consult li {
+    float: left;
+    margin-left: 100px;
+    display: block;
+    text-align: center;
+    margin-right: 0px;
+}
 .consult li:nth-child(3n) {
   margin-right: 0px;
+}
+.consult_img {
+    /* width: 200px; */
+    height: 200px;
+    overflow: hidden;
+    border-radius: 118px;
+    margin-bottom: 10px;
 }
 .statii li {
   float: left;
@@ -647,12 +675,12 @@ input.modal_f {
 #name::-webkit-input-placeholder {
   color: #4d4d4d;
 }
-.foto_otz  {
-  width: 100px;
-  height: 100px;
-  float: left;
-  margin-right: 8px;
-  margin-bottom: 12px;
+.foto_otz {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 17px;
+    margin-bottom: 12px;
 }
 .name_cl {
   font-family: "PTSansBold";
@@ -668,8 +696,8 @@ input.modal_f {
   color: #4d4d4d;
 }
 .otzv {
-  width: 100%;
-  margin-top: 21px;
+    width: 100%;
+    margin-top: 7px;
 }
 .item p {
   width: 100%;
@@ -749,4 +777,14 @@ input.modal_f {
   display: block;
   width: 100%;
   height: auto;
+}
+.help-block {
+    font-size: 13px;
+    font-family: "PTSansRegular";
+    margin-top: -14px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    text-indent: 0px;
+    text-align: left;
 }

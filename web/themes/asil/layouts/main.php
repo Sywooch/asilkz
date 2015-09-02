@@ -82,10 +82,38 @@ $theme = $this->theme;
 								</span>
                         </div>
                         <p><?=$item->content?></p>
+						<div class="back_otziv">
+							<a href="#modal2" class="open_modal">Осатвить отзыв</a><!-- ссылка с href="#modal1", откроет окно с  id = modal1-->
+						</div>
                     </div>
                     <?php endforeach?>
                 </div>
             </div>
+			<div class="sertifikat">
+				<div class="sertifikat_title">
+					Сертификаты
+				</div>
+				<div class="sertifikat_container">
+					<div id="wrapper">
+						<a class="fancybox" rel="gallery" href="img/atlas_b.jpg">
+							<img src="img/atlas_b.jpg" alt="" />
+						</a>
+						<a class="fancybox" rel="gallery" href="img/2b.jpg">
+							<img src="" alt="" />
+						</a>
+						<a class="fancybox " rel="gallery" href="img/3b.jpg">
+							<img src="" alt="" />
+						</a>
+						<a class="fancybox" rel="gallery" href="img/4b.jpg">
+							<img src="" alt="" />
+						</a>
+						<a class="fancybox " rel="gallery" href="img/5b.jpg">
+							<img src="" alt="" />
+						</a>
+						
+					</div>
+				</div>
+			</div>
         </div>
         <?php endif?>
 
