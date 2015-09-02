@@ -91,24 +91,24 @@ $theme = $this->theme;
 					Сертификаты
 				</div>
 				<div class="sertifikat_container">
-					<ul class="sertif">
-						<li><a class="fancybox" rel="gallery" href="img/atlas_b.jpg">
-								<img src="<?=$theme->getUrl('img/opt.jpg')?>"/>
-							</a>
-						</li>
-						<li><a class="fancybox" rel="gallery" href="img/atlas_b.jpg">
-								<img src="<?=$theme->getUrl('img/opt.jpg')?>"/>
-							</a>
-						</li>
-						<li><a class="fancybox" rel="gallery" href="img/atlas_b.jpg">
-								<img src="<?=$theme->getUrl('img/opt.jpg')?>"/>
-							</a>
-						</li>
-						<li><a class="fancybox" rel="gallery" href="img/atlas_b.jpg">
-								<img src="<?=$theme->getUrl('img/opt.jpg')?>"/>
-							</a>
-						</li>
-					</ul>
+					<div id="wrapper">
+						<a class="fancybox" rel="gallery" href="img/atlas_b.jpg">
+							<img src="img/atlas_b.jpg" alt="" />
+						</a>
+						<a class="fancybox" rel="gallery" href="img/2b.jpg">
+							<img src="" alt="" />
+						</a>
+						<a class="fancybox " rel="gallery" href="img/3b.jpg">
+							<img src="" alt="" />
+						</a>
+						<a class="fancybox" rel="gallery" href="img/4b.jpg">
+							<img src="" alt="" />
+						</a>
+						<a class="fancybox " rel="gallery" href="img/5b.jpg">
+							<img src="" alt="" />
+						</a>
+						
+					</div>
 				</div>
 			</div>
         </div>
