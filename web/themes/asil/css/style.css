@@ -273,11 +273,13 @@ ul.pord_spisok li {
     display: block;
 }
 .img_pr {
-  width: 84px;
-  height: 84px;
-  border: 1px solid #ccc;
-  margin-right: 12px;
-  float: left;
+    width: 84px;
+    height: 100px;
+    margin-right: 12px;
+    float: left;
+}
+.img_pr img {
+    border: 1px solid #ccc;
 }
 .opisanie span {
     font-family: "PTSansRegular";
