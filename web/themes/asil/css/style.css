@@ -268,8 +268,9 @@ ul.pord_spisok li {
     padding: 10px 0;
 }
 .opisanie {
-  width: 350px;
-  float: left;
+    width: 80%;
+    float: left;
+    display: block;
 }
 .img_pr {
   width: 84px;
