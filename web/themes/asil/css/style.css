@@ -280,11 +280,11 @@ ul.pord_spisok li {
   float: left;
 }
 .opisanie span {
-  display: inline-block;
-  font-family: "PTSansRegular";
-  font-size: 18px;
-  color: #4b4e4f;
-  margin-bottom: 4px;
+    font-family: "PTSansRegular";
+    font-size: 18px;
+    color: #4b4e4f;
+    margin-bottom: 4px;
+    display: block;
 }
 span.name_pr {
   color: #368dbe;
