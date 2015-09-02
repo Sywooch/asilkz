@@ -675,12 +675,12 @@ input.modal_f {
 #name::-webkit-input-placeholder {
   color: #4d4d4d;
 }
-.foto_otz  {
-  width: 100px;
-  height: 100px;
-  float: left;
-  margin-right: 8px;
-  margin-bottom: 12px;
+.foto_otz {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 17px;
+    margin-bottom: 12px;
 }
 .name_cl {
   font-family: "PTSansBold";

@@ -82,6 +82,9 @@ $theme = $this->theme;
 								</span>
                         </div>
                         <p><?=$item->content?></p>
+						<div class="back_otziv">
+							<a href="#modal2" class="open_modal"><img src="<?=$theme->getUrl('img/zvonok.png')?>"/></a><!-- ссылка с href="#modal1", откроет окно с  id = modal1-->
+						</div>
                     </div>
                     <?php endforeach?>
                 </div>
