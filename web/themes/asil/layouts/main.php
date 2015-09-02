@@ -95,20 +95,23 @@ $theme = $this->theme;
 				</div>
 				<div class="sertifikat_container">
 					<div id="wrapper">
-						<a class="fancybox" rel="gallery" href="img/atlas_b.jpg">
-							<img src="img/atlas_b.jpg" alt="" />
+						<a class="fancybox" rel="gallery" href="img/blag_pismo_1b.jpg">
+							<img src="img/blag_pismo_1m" alt="" />
 						</a>
-						<a class="fancybox" rel="gallery" href="img/2b.jpg">
-							<img src="" alt="" />
+						<a class="fancybox" rel="gallery" href="img/blag_pismo_1b.jpg">
+							<img src="img/blag_pismo_1m" alt="" />
 						</a>
-						<a class="fancybox " rel="gallery" href="img/3b.jpg">
-							<img src="" alt="" />
+						<a class="fancybox " rel="gallery" href="img/blag_pismo_1b.jpg">
+							<img src="img/blag_pismo_1m" alt="" />
 						</a>
-						<a class="fancybox" rel="gallery" href="img/4b.jpg">
-							<img src="" alt="" />
+						<a class="fancybox" rel="gallery" href="img/blag_pismo_1b.jpg">
+							<img src="img/blag_pismo_1m" alt="" />
 						</a>
-						<a class="fancybox " rel="gallery" href="img/5b.jpg">
-							<img src="" alt="" />
+						<a class="fancybox " rel="gallery" href="img/blag_pismo_1b.jpg">
+							<img src="img/blag_pismo_1m" alt="" />
+						</a>
+						<a class="fancybox " rel="gallery" href="img/blag_pismo_1b.jpg">
+							<img src="img/blag_pismo_1m" alt="" />
 						</a>
 						
 					</div>
