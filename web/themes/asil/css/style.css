@@ -426,13 +426,21 @@ ul.vrach {
   margin-bottom: 20px;
 }
 ul.vrach li {
-  width: 212px;
-  height: 244px;
-  float: left;
-  margin-left: 62px;
+    width: 212px;
+    float: left;
+    margin-left: 62px;
+    text-align: center;
 }
 .vrach_dannie {
   text-align: center;
+}
+.vrach_dannie p {
+    text-align: center;
+}
+.vrach_dannie p span {
+    display: block;
+    text-align: center;
+    font-family: "PTSansBold";
 }
 .vrach_dannie img {
   border-radius: 100px;
@@ -480,10 +488,19 @@ ul.oplata {
 }
 .consult li {
   width: 191px;
-  height: 244px;
   float: left;
   margin-left: 0px;
   margin-right: 31px;
+}
+ul.vrach.consult li {
+    /* width: 212px; */
+    /* height: 244px; */
+    float: left;
+    margin-left: 100px;
+    display: block;
+    text-align: center;
+    /* margin: 0 auto; */
+    margin-right: 0px;
 }
 .consult li:nth-child(3n) {
   margin-right: 0px;
