@@ -20,7 +20,7 @@ use \yii\widgets\ActiveForm;
     <?php ActiveForm::end()?>
 </div>
 <div id="overlay"></div>
-<div id="modal2" class="modal_div"> <!-- скрытый див с уникальным id = modal1 -->
+<div id="modal3" class="modal_div"> <!-- скрытый див с уникальным id = modal1 -->
 	<span class="modal_close"></span>
 	<span class="title_z">Обратный звонок</span>
         <form method="POST" name="form1" action="form.php" >
