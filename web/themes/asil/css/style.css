@@ -493,13 +493,10 @@ ul.oplata {
   margin-right: 31px;
 }
 ul.vrach.consult li {
-    /* width: 212px; */
-    /* height: 244px; */
     float: left;
     margin-left: 100px;
     display: block;
     text-align: center;
-    /* margin: 0 auto; */
     margin-right: 0px;
 }
 .consult li:nth-child(3n) {
