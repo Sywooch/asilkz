@@ -96,22 +96,22 @@ $theme = $this->theme;
 				<div class="sertifikat_container">
 					<div id="wrapper">
 						<a class="fancybox" rel="gallery" href="img/blag_pismo_1b.jpg">
-							<img src="img/blag_pismo_1m" alt="" />
+							<img src="img/blag_pismo_1m.jpg" alt="" />
 						</a>
 						<a class="fancybox" rel="gallery" href="img/blag_pismo_1b.jpg">
-							<img src="img/blag_pismo_1m" alt="" />
+							<img src="img/blag_pismo_1m.jpg" alt="" />
 						</a>
 						<a class="fancybox " rel="gallery" href="img/blag_pismo_1b.jpg">
-							<img src="img/blag_pismo_1m" alt="" />
+							<img src="img/blag_pismo_1m.jpg" alt="" />
 						</a>
 						<a class="fancybox" rel="gallery" href="img/blag_pismo_1b.jpg">
-							<img src="img/blag_pismo_1m" alt="" />
+							<img src="img/blag_pismo_1m.jpg" alt="" />
 						</a>
 						<a class="fancybox " rel="gallery" href="img/blag_pismo_1b.jpg">
-							<img src="img/blag_pismo_1m" alt="" />
+							<img src="img/blag_pismo_1m.jpg" alt="" />
 						</a>
 						<a class="fancybox " rel="gallery" href="img/blag_pismo_1b.jpg">
-							<img src="img/blag_pismo_1m" alt="" />
+							<img src="img/blag_pismo_1m.jpg" alt="" />
 						</a>
 						
 					</div>
