@@ -290,6 +290,15 @@
 		background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/
 	}
 }
+.sertifikat_title {
+    font-family: "PTSansBold";
+    font-size: 18px;
+    color: #4d4d4d;
+    line-height: 24px;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 3px;
+    margin-left: 14px;
+}
 .sertifikat_container {
     overflow: hidden;
     margin-top: 9px;
