@@ -12,7 +12,7 @@ $this->title = 'Просмотр заказа №'.$model->id;
     <p><span>Статус:</span>     <?=$model->statusTitle?></p>
 </div>
 <div class="title_zakaz">Заказанные товары</div>
-<table class="zakaz_table"style="width: 90%;">
+<table class="zakaz_table">
     <tfoot>
     <tr>
         <td colspan="3" style="text-align: right;padding-right: 20px">
@@ -39,5 +39,5 @@ $this->title = 'Просмотр заказа №'.$model->id;
     </tbody>
 </table>
 <div class="save_zakaz">
-	<a href="#" class="save_zakaz_s"></a>
+	<a href="#" class="save_zakaz_s">Сохранить заказ на компьютер</a>
 </div>

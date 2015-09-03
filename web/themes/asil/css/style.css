@@ -842,14 +842,15 @@ a.open_modal.otkrit {
 }
 .save_zakaz_s {
     background-image: url(../img/button.png);
-    width: 142px;
+    width: 148px;
     float: right;
-    height: 37px;
+    height: 38px;
+    background-size: cover;
     display: block;
     text-align: center;
     line-height: 37px;
     margin-top: 17px;
     color: #fff;
     font-family: "PTSansRegular";
-    background-color: #000;
+	border-radius: 4px;
 }

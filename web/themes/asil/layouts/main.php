@@ -35,7 +35,7 @@ $theme = $this->theme;
                     </h1>
 
                     <div class="zvonok_open rel">
-                        <span>8 7172 53 68 95</span>
+                        <span>+ 7 (701) 376 70 37</span>
                         <a href="#modal1" class="open_modal"><img src="<?=$theme->getUrl('img/zvonok.png')?>"/></a><!-- ссылка с href="#modal1", откроет окно с  id = modal1-->
                     </div>
                 </div>
