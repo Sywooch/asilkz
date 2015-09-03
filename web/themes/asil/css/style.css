@@ -527,10 +527,9 @@ ul.vrach.consult li {
   margin-right: 0px;
 }
 .title_stati {
-  font-family: Calibri;
-  color: #4d4d4d;
-  font-size: 17px;
-  margin-bottom: 2px;
+    font-family: "PTSansBold";
+    font-size: 17px;
+    margin-bottom: 10px;
 }
 .statii li span {
   float: right;
