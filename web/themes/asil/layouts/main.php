@@ -75,9 +75,6 @@ $theme = $this->theme;
 									<?=$item->name?>
 								</span>
 								<span class="years">
-									<?=$item->age?> лет
-								</span>
-								<span class="years">
 									<?=$item->company?>
 								</span>
                         </div>
