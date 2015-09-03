@@ -281,6 +281,11 @@ ul.pord_spisok li {
 .img_pr img {
     border: 1px solid #ccc;
 }
+.opisanie-txt {
+    width: 443px;
+    float: left;
+    overflow: hidden;
+}
 .opisanie span {
     font-family: "PTSansRegular";
     font-size: 18px;
