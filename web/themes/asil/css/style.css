@@ -281,7 +281,10 @@ ul.pord_spisok li {
 .img_pr img {
     border: 1px solid #ccc;
 }
-
+.opisanie-txt {
+    width: 428px;
+    float: left;
+}
 .opisanie span {
     font-family: "PTSansRegular";
     font-size: 18px;
@@ -743,11 +746,12 @@ input.modal_f {
 }
 .spoiler_body {
     display: none;
-    width: 657px;
+    width: 655px;
     font-family: "PTSansRegular";
     font-size: 15px;
     color: #4b4e4f;
     line-height: 16px;
+    margin-left: -95px;
     overflow: hidden;
     clear: both;
     margin-top: 28px;
