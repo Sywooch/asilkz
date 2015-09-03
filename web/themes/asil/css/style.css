@@ -452,9 +452,10 @@ ul.vrach li {
 .vrach_dannie img {
     float: none;
     width: 100%;
-    height: 100%;
     margin: 0px;
+    border-radius: 118px;
     border: none;
+    text-align: center;
 }
 .vrach_dannie span {
   font-family: "PTSansRegular";
@@ -511,11 +512,10 @@ ul.vrach.consult li {
   margin-right: 0px;
 }
 .consult_img {
-    /* width: 200px; */
-    height: 200px;
+    height: 213px;
     overflow: hidden;
-    border-radius: 118px;
     margin-bottom: 10px;
+    text-align: center;
 }
 .statii li {
   float: left;
