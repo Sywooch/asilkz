@@ -10,7 +10,7 @@ $this->title = 'Просмотр заказа №'.$model->id;
 <div class="title"><h2>Заказ №<?=$model->id?></h2></div>
 <div class="staus_zakaz">
     <p><span>Статус:</span>     <?=$model->statusTitle?></p>
-<div>
+</div>
 <div class="title_zakaz">Заказанные товары</div>
 <table class="zakaz_table"style="width: 90%;">
     <tfoot>
