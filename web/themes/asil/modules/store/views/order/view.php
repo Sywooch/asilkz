@@ -38,3 +38,6 @@ $this->title = 'Просмотр заказа №'.$model->id;
     <?php endforeach?>
     </tbody>
 </table>
+<div class="save_zakaz">
+	<a href="#" class="save_zakaz_s"></a>
+</div>
