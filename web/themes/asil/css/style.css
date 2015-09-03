@@ -749,9 +749,10 @@ input.modal_f {
     font-family: "PTSansRegular";
     font-size: 15px;
     color: #4b4e4f;
-    line-height: 16px;
+    line-height: 17px;
     margin-left: -95px;
     overflow: hidden;
+    text-align: justify;
     clear: both;
     margin-top: 28px;
 }
