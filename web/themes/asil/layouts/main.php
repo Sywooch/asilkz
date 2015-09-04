@@ -35,7 +35,7 @@ $theme = $this->theme;
                     </h1>
 
                     <div class="zvonok_open rel">
-                        <span>8 7172 53 68 95</span>
+                        <span>+ 7 (701) 376 70 37</span>
                         <a href="#modal1" class="open_modal"><img src="<?=$theme->getUrl('img/zvonok.png')?>"/></a><!-- ссылка с href="#modal1", откроет окно с  id = modal1-->
                     </div>
                 </div>
@@ -75,9 +75,6 @@ $theme = $this->theme;
 									<?=$item->name?>
 								</span>
 								<span class="years">
-									<?=$item->age?> лет
-								</span>
-								<span class="years">
 									<?=$item->company?>
 								</span>
                         </div>
@@ -95,22 +92,25 @@ $theme = $this->theme;
 				</div>
 				<div class="sertifikat_container">
 					<div id="wrapper">
-						<a class="fancybox" rel="gallery" href="img/atlas_b.jpg">
-							<img src="img/atlas_b.jpg" alt="" />
+						<a class="fancybox " rel="gallery" href="<?=$theme->getUrl('img/blag_pismo_6b.jpg')?>">
+							<img src="<?=$theme->getUrl('img/blag_pismo_6m.jpg')?>" alt="" />
 						</a>
-						<a class="fancybox" rel="gallery" href="img/2b.jpg">
-							<img src="" alt="" />
+						<a class="fancybox" rel="gallery" href="<?=$theme->getUrl('img/blag_pismo_2b.jpg')?>">
+							<img src="<?=$theme->getUrl('img/blag_pismo_2m.jpg')?>" alt="" />
 						</a>
-						<a class="fancybox " rel="gallery" href="img/3b.jpg">
-							<img src="" alt="" />
+						<a class="fancybox " rel="gallery" href="<?=$theme->getUrl('img/blag_pismo_3b.jpg')?>">
+							<img src="<?=$theme->getUrl('img/blag_pismo_3m.jpg')?>" alt="" />
 						</a>
-						<a class="fancybox" rel="gallery" href="img/4b.jpg">
-							<img src="" alt="" />
+						<a class="fancybox" rel="gallery" href="<?=$theme->getUrl('img/blag_pismo_4b.jpg')?>">
+							<img src="<?=$theme->getUrl('img/blag_pismo_4m.jpg')?>" alt="" />
 						</a>
-						<a class="fancybox " rel="gallery" href="img/5b.jpg">
-							<img src="" alt="" />
+						<a class="fancybox " rel="gallery" href="<?=$theme->getUrl('img/blag_pismo_5b.jpg')?>">
+							<img src="<?=$theme->getUrl('img/blag_pismo_5m.jpg')?>" alt="" />
 						</a>
 						
+						<a class="fancybox" rel="gallery" href="<?=$theme->getUrl('img/blag_pismo_1b.jpg')?>">
+							<img src="<?=$theme->getUrl('img/blag_pismo_1m.jpg')?>" alt="" />
+						</a>
 					</div>
 				</div>
 			</div>
