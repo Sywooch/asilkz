@@ -3,6 +3,7 @@
 namespace app\modules\store\models;
 
 
+use app\modules\cms\components\CmsBehavior;
 use Yii;
 use app\modules\cms\models\Image;
 use app\modules\cms\components\TranslitBehavior;
@@ -65,6 +66,9 @@ class Category extends \yii\db\ActiveRecord
             'translit' => [
                 'class' => TranslitBehavior::className(),
             ],
+            'cms'=>[
+                'class'=>CmsBehavior::className(),
+            ]
         ];
     }
 
