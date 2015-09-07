@@ -92,9 +92,6 @@ $theme = $this->theme;
 				</div>
 				<div class="sertifikat_container">
 					<div id="wrapper">
-						<a class="fancybox " rel="gallery" href="<?=$theme->getUrl('img/blag_pismo_6b.jpg')?>">
-							<img src="<?=$theme->getUrl('img/blag_pismo_6m.jpg')?>" alt="" />
-						</a>
 						<a class="fancybox" rel="gallery" href="<?=$theme->getUrl('img/blag_pismo_2b.jpg')?>">
 							<img src="<?=$theme->getUrl('img/blag_pismo_2m.jpg')?>" alt="" />
 						</a>
@@ -106,10 +103,6 @@ $theme = $this->theme;
 						</a>
 						<a class="fancybox " rel="gallery" href="<?=$theme->getUrl('img/blag_pismo_5b.jpg')?>">
 							<img src="<?=$theme->getUrl('img/blag_pismo_5m.jpg')?>" alt="" />
-						</a>
-						
-						<a class="fancybox" rel="gallery" href="<?=$theme->getUrl('img/blag_pismo_1b.jpg')?>">
-							<img src="<?=$theme->getUrl('img/blag_pismo_1m.jpg')?>" alt="" />
 						</a>
 					</div>
 				</div>
