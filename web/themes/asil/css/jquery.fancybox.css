@@ -237,15 +237,14 @@
 	white-space: nowrap;
 }
 .fancybox {
-    width: 116px;
-    height: 143px;
+    width: 120px;
+    height: 150px;
     border: 3px solid #f6f6f6;
     display: block;
     padding: 3px;
     float: left;
-    margin-right: 14px;
     margin-left: 15px;
-    margin-bottom: 37px;
+    margin-bottom: 12px;
     background-color: #fff;
     box-shadow: inset 0px 0px 8px #E0D1D1;
 }

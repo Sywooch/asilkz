@@ -301,15 +301,14 @@ span.date {
 .slider {
   float: left;
   width: 100%;
-  height: 300px;
+  height: 283px;
   position: relative;
-  padding-bottom: 26px;
+  padding-bottom: 22px;
 }
-
 .sliderContent {
   float: left;
   width: 283px;
-  height: 290px;
+  height: 272px;
   clear: both;
   position: relative;
   overflow: hidden;
