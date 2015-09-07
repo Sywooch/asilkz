@@ -2,6 +2,8 @@
 
 namespace app\modules\cms\models;
 
+use alexBond\thumbler\Thumbler;
+use app\modules\cms\components\CmsBehavior;
 use Yii;
 use yii\db\ActiveQuery;
 
@@ -15,6 +17,7 @@ use yii\db\ActiveQuery;
  * @property string $content
  * @property integer $visible
  * @property \app\modules\cms\models\Image $image
+ * @method string imageSrc(string $size='100x100', string $method=Thumbler::METHOD_NOT_BOXED)
  */
 class Reviews extends \yii\db\ActiveRecord
 {
@@ -79,6 +82,15 @@ class Reviews extends \yii\db\ActiveRecord
     public static function find()
     {
         return new ReviewsQuery(get_called_class());
+    }
+
+    public function behaviors()
+    {
+        return [
+            'cms'=>[
+                'class'=>CmsBehavior::className(),
+            ],
+        ];
     }
 
     /**

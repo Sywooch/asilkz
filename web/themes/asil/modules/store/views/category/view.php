@@ -38,6 +38,7 @@ $theme =  $this->theme;
                 <div class="img_pr">
                     <img src="<?= $product->imageSrc('84x84') ?>" alt=""/>
                 </div>
+				<div class="opisanie-txt">
 								<span class="name_pr">
 									<?=$product->title?>
 								</span>
@@ -47,11 +48,13 @@ $theme =  $this->theme;
 								<span class="min_zakaz">
 									 Минимальный заказ: <?=$product->minCount?> шт
 								</span>
-                <a href="" class="spoiler_links">Подробнее<div class="podr_img"><img  src="<?=$theme->getUrl('img/prodrobnee.png')?>"/></div> </a>
-                <div class="spoiler_body">
-                    <?=$product->content?>
-                    <a  class="skrit" onclick=$("div[class^='spoiler_body']").hide('normal')>скрыть</a>
-                </div>
+					<a href="" class="spoiler_links">Подробнее<div class="podr_img"><img  src="<?=$theme->getUrl('img/prodrobnee.png')?>"/></div> </a>
+				
+					<div class="spoiler_body">
+						<?=$product->content?>
+						<a  class="skrit" onclick=$("div[class^='spoiler_body']").hide('normal')>скрыть</a>
+					</div>
+				 </div>
             </div>
             <div class="kolichestvo">
                 <span>Количество</span>

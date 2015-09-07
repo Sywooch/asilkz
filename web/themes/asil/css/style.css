@@ -81,7 +81,6 @@
  .menu ul li a {
     color: #fff;
     font-family: 'PtSansbold';
-    font-weight: bold;
     font-size: 13px;
     display: block;
     letter-spacing: 0.5px;
@@ -166,9 +165,13 @@ margin-bottom:0px;
 }
 .title h2 {
     font-family: "PTSansBold";
-    font-size: 20px;
+    font-size: 18px;
     color: #4d4d4d;
     line-height: 25px;
+    display: inline-block;
+}
+.title.rel span {
+    float: right;
 }
 .side_bar ul li:first-child {
     margin-top: 7px;
@@ -265,22 +268,29 @@ ul.pord_spisok li {
     padding: 10px 0;
 }
 .opisanie {
-  width: 350px;
-  float: left;
+   width: 80%; 
+    float: left;
+    display: block;
 }
 .img_pr {
-  width: 84px;
-  height: 84px;
-  border: 1px solid #ccc;
-  margin-right: 12px;
-  float: left;
+    width: 84px;
+    height: 100px;
+    margin-right: 12px;
+    float: left;
+}
+.img_pr img {
+    border: 1px solid #ccc;
+}
+.opisanie-txt {
+    width: 428px;
+    float: left;
 }
 .opisanie span {
-  display: inline-block;
-  font-family: "PTSansRegular";
-  font-size: 18px;
-  color: #4b4e4f;
-  margin-bottom: 4px;
+    font-family: "PTSansRegular";
+    font-size: 18px;
+    color: #4b4e4f;
+    margin-bottom: 4px;
+    display: block;
 }
 span.name_pr {
   color: #368dbe;
@@ -383,18 +393,18 @@ text-decoration:underline;
   text-align: justify;
   margin-bottom:8px;
 }
-.text .ul{
-	list-style-type:disc;
-	-webkit-padding-start:30px;
+.text .ul {
+    list-style-type: disc;
+    -webkit-padding-start: 17px;
+    overflow: hidden;
 }
-.text .ul li{
-	font-family: "PTSansRegular";
-	font-size: 14px;
-	line-height: 18px;
-	color: #4d4d4d;
-	text-align: justify;
-	margin-bottom:10px;
-	margin-left: -15px;
+.text .ul li {
+    font-family: "PTSansRegular";
+    font-size: 14px;
+    line-height: 18px;
+    color: #4d4d4d;
+    text-align: justify;
+    margin-bottom: 10px;
 }
 .etc {
     height: 30px;
@@ -405,6 +415,9 @@ text-decoration:underline;
     padding: 0 15px;
     font-size: 14px;
     font-family: 'PtSansRegular';
+}
+.etc:hover {
+    background-color: #458922;
 }
 ul.cont {
   margin-bottom: 25px;
@@ -420,19 +433,29 @@ ul.vrach {
   margin-bottom: 20px;
 }
 ul.vrach li {
-  width: 212px;
-  height: 244px;
-  float: left;
-  margin-left: 62px;
+    width: 212px;
+    float: left;
+    margin-left: 62px;
+    text-align: center;
 }
 .vrach_dannie {
   text-align: center;
 }
+.vrach_dannie p {
+    text-align: center;
+}
+.vrach_dannie p span {
+    display: block;
+    text-align: center;
+    font-family: "PTSansBold";
+}
 .vrach_dannie img {
-  border-radius: 100px;
-  margin: 0px 0px 10px;
-  display: inline-block;
-  float: none;
+    float: none;
+    width: 100%;
+    margin: 0px;
+    border-radius: 118px;
+    border: none;
+    text-align: center;
 }
 .vrach_dannie span {
   font-family: "PTSansRegular";
@@ -474,13 +497,25 @@ ul.oplata {
 }
 .consult li {
   width: 191px;
-  height: 244px;
   float: left;
   margin-left: 0px;
   margin-right: 31px;
 }
+ul.vrach.consult li {
+    float: left;
+    margin-left: 100px;
+    display: block;
+    text-align: center;
+    margin-right: 0px;
+}
 .consult li:nth-child(3n) {
   margin-right: 0px;
+}
+.consult_img {
+    height: 213px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    text-align: center;
 }
 .statii li {
   float: left;
@@ -492,10 +527,9 @@ ul.oplata {
   margin-right: 0px;
 }
 .title_stati {
-  font-family: Calibri;
-  color: #4d4d4d;
-  font-size: 17px;
-  margin-bottom: 2px;
+    font-family: "PTSansBold";
+    font-size: 17px;
+    margin-bottom: 10px;
 }
 .statii li span {
   float: right;
@@ -647,12 +681,12 @@ input.modal_f {
 #name::-webkit-input-placeholder {
   color: #4d4d4d;
 }
-.foto_otz  {
-  width: 100px;
-  height: 100px;
-  float: left;
-  margin-right: 8px;
-  margin-bottom: 12px;
+.foto_otz {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 17px;
+    margin-bottom: 12px;
 }
 .name_cl {
   font-family: "PTSansBold";
@@ -668,16 +702,17 @@ input.modal_f {
   color: #4d4d4d;
 }
 .otzv {
-  width: 100%;
-  margin-top: 21px;
+    width: 100%;
+    margin-top: 7px;
 }
 .item p {
-  width: 100%;
-  overflow: hidden;
-  font-family: "PTSansItalic";
-  font-size: 14px;
-  color: #4d4d4d;
-  line-height: 15px;
+    width: 100%;
+    overflow: hidden;
+    font-family: "PTSansItalic";
+    font-size: 14px;
+    height: 89px;
+    color: #4d4d4d;
+    line-height: 15px;
 }
 .search a {
     width: 142px;
@@ -710,12 +745,14 @@ input.modal_f {
 }
 .spoiler_body {
     display: none;
-    width: 657px;
+    width: 655px;
     font-family: "PTSansRegular";
     font-size: 15px;
     color: #4b4e4f;
-    line-height: 16px;
+    line-height: 17px;
+    margin-left: -95px;
     overflow: hidden;
+    text-align: justify;
     clear: both;
     margin-top: 28px;
 }
@@ -749,4 +786,73 @@ input.modal_f {
   display: block;
   width: 100%;
   height: auto;
+}
+.help-block {
+    font-size: 13px;
+    font-family: "PTSansRegular";
+    margin-top: -14px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    text-indent: 0px;
+    text-align: left;
+}
+a.open_modal.otkrit {
+    background-image: url(../img/button.png);
+    width: 142px;
+    height: 37px;
+    display: block;
+    text-align: center;
+    line-height: 37px;
+    margin-top: 17px;
+    color: #fff;
+    font-family: "PTSansRegular";
+}
+.staus_zakaz {
+    font-family: "PTSansRegular";
+    font-size: 17px;
+    color: #4d4d4d;
+    line-height: 24px;
+    margin-bottom: 3px;
+}
+.staus_zakaz span {
+    font-family: "PTSansBOld";
+}
+.title_zakaz {
+    font-family: "PTSansRegular";
+    font-size: 17px;
+    margin-bottom: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.zakaz_table {
+    width: 100%;
+}
+.zakaz_table tr td {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.zakaz_table tr td:last-child {
+    text-align: center;
+}
+.zakaz_table tr td:first-child {
+    text-align: center;
+}
+.zakaz_table thead {
+    font-family: "PTSansBOld";
+}
+.save_zakaz_s {
+    background-image: url(../img/button.png);
+    width: 206px;
+    float: right;
+    height: 44px;
+    background-size: cover;
+    display: block;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 17px;
+    font-size: 14px;
+    color: #fff;
+    font-family: "PTSansRegular";
+    border-radius: 4px;
 }

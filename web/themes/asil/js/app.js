@@ -1,4 +1,3 @@
-
 $(document).ready(function() { // запускаем скрипт после загрузки всех элементов
     /* засунем сразу все элементы в переменные, чтобы скрипту не приходилось их каждый раз искать при кликах */
     var overlay = $('#overlay'); // подложка, должна быть одна на странице
@@ -28,11 +27,18 @@ $(document).ready(function() { // запускаем скрипт после з�
      });
 });
 
-
+//fancybox
+$(document).ready(function() {
+	$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});
+//
 //1
     $(document).ready(function() {
       $("#owl-demo").owlCarousel({
-        autoPlay: 3000,
+        autoPlay: false,
         items : 4,
         itemsDesktop : [1199,3],
         itemsDesktopSmall : [979,3]

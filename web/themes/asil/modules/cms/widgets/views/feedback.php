@@ -19,5 +19,4 @@ use \yii\widgets\ActiveForm;
         <button type="submit" name="submit1">Обратный Звонок</button>
     <?php ActiveForm::end()?>
 </div>
-<div id="overlay"></div>
 <!-- Подложка, одна на всю страницу -->

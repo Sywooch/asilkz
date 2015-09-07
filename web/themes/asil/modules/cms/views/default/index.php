@@ -9,7 +9,7 @@ $this->title = Yii::$app->name;
     <h2>О компании</h2>
 </div>
 <div class="text">
-    <img src="<?=$theme->getUrl('img/opt.jpg')?>"/>
+    <img src="<?=$theme->getUrl('img/glavnaia_photo.jpg')?>"/>
     <p>Компания «Асыл Кокше Зооветснаб» является эксклюзивным дистрибьютором в Казахстане хорошо известных европейских производителей ветпрепаратов – Лабораториос Овехеро (Испания), Биовет Дрвалев (Польша), Минитюб (Германия), Берингер Ингельхайм (Германия), Zoetis (Pfizer) США.</p>
 	<p>Благодаря нашему сотрудничеству с этими компаниями, мы имеем возможность предлагать Казахстанским животноводам качественные и эффективные препараты по конкурентным ценам.
 	</p>
@@ -25,7 +25,7 @@ $this->title = Yii::$app->name;
         <div class="item">
             <div class="slid_one">
                 <div class="img_slid">
-                    <img src="<?=$item->image->resize('133x93')?>">
+                    <img src="<?=$item->imageSrc('133x93')?>">
                 </div>
                 <span class="date"><?=Yii::$app->formatter->asDate(strtotime($item->dateCreate))?></span>
                 <div class="slid_txt">
@@ -48,7 +48,7 @@ $this->title = Yii::$app->name;
 <div class="text">
     <?php foreach($items as $item):?>
     <div id="owl-demo2" class="owl-carousel akcii">
-        <div class="item"><img src="<?=$item->image->resize('201x141')?>" alt="Owl Image"></div>
+        <div class="item"><img src="<?=$item->imageSrc('201x141')?>" alt="Owl Image"></div>
         <?php endforeach?>
     </div>
 </div>
@@ -65,7 +65,7 @@ $this->title = Yii::$app->name;
         <div class="item">
             <div class="slid_one">
                 <div class="img_slid">
-                    <img src="<?=$item->image->resize('139x97')?>">
+                    <img src="<?=$item->imageSrc('139x97')?>">
                 </div>
                 <span class="date"><?=Yii::$app->formatter->asDate(strtotime($item->dateCreate))?></span>
                 <div class="slid_txt">

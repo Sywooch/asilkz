@@ -2,6 +2,7 @@
 
 namespace app\modules\cms\models;
 
+use app\modules\cms\components\CmsBehavior;
 use app\modules\cms\components\ImageBehavior;
 use app\modules\cms\components\Shortext;
 use Yii;
@@ -20,6 +21,7 @@ use yii\helpers\Url;
  * @property integer $visible
  * @property string $dateCreate
  * @property Image $image
+ * @method string imageSrc(string $size = '100x100', string $method = Thumbler::METHOD_NOT_BOXED)
  */
 class Article extends \yii\db\ActiveRecord
 {
@@ -101,12 +103,12 @@ class Article extends \yii\db\ActiveRecord
             'translit'=>[
                 'class'=>TranslitBehavior::className(),
             ],
-            'image'=>[
-                'class'=>ImageBehavior::className(),
-            ],
             'shortext'=>[
                 'class'=>Shortext::className(),
             ],
+            'cms'=>[
+                'class'=>CmsBehavior::className(),
+            ]
         ];
     }
 

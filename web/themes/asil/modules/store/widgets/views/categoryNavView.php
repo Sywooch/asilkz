@@ -9,7 +9,7 @@
 <ul>
     <?php foreach($items as $item):?>
         <li>
-            <div class="catalog_li"><img src="<?=$item->image->resize('33x30')?>"></div>
+            <div class="catalog_li"><img src="<?=$item->imageSrc('33x30')?>"></div>
             <a href="<?=$item->path?>" <?=$alias==$item->alias ? 'class="active_sb"' : ''?>><?=$item->title?></a>
         </li>
     <?php endforeach?>

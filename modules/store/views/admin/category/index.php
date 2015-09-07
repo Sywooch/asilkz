@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'format'=>'html',
                 'value'=>function($model)
                 {
-                    return Html::img($model->image->resize('32x29'));
+                    return Html::img($model->imageSrc('32x29'));
                 }
             ],
             'title',

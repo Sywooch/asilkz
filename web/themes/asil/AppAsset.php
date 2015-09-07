@@ -20,12 +20,14 @@ class AppAsset extends AssetBundle
         'css/Slider2.css',
         'css/owl.carousel.css',
         'css/owl.theme.css',
+		'css/jquery.fancybox.css',
     ];
 
     public $js = [
         'js/mobilyslider.js',
         'js/owl.carousel.js',
         'js/app.js',
+		'js/jquery.fancybox.pack.js',
     ];
 
     public $depends = [
