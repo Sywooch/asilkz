@@ -383,7 +383,7 @@ text-decoration:underline;
 .text {
   width: 100%;
   overflow: hidden;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 .text p {
   font-family: "PTSansRegular";
@@ -780,9 +780,7 @@ input.modal_f {
     font-family: "PTSansRegular";
 }
  .spoiler_links {cursor:pointer;}
- #owl-demo .item{
-  margin: 3px;
-}
+
 #owl-demo .item img{
   display: block;
   width: 100%;
