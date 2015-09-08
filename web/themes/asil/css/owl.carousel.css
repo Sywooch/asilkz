@@ -38,8 +38,8 @@
 }
 .owl-carousel .owl-item {
     float: left;
-    width: 139px!important;
-    margin: 0 13px  ;
+    width: 155px!important;
+    margin-right: 12px;
 }
 .owl-carousel.akcii .owl-item {
     float: left;
