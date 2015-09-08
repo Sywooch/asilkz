@@ -4,6 +4,7 @@
  * @var $model \app\modules\store\models\Order
  * @var $subject string
  */
+use yii\helpers\Url;
 $this->title = 'Просмотр заказа №'.$model->id;
 ?>
 
@@ -38,6 +39,8 @@ $this->title = 'Просмотр заказа №'.$model->id;
     <?php endforeach?>
     </tbody>
 </table>
+<?php if(Yii::$app->controller->route == 'store/order/view'):?>
 <div class="save_zakaz">
-	<a href="#" class="save_zakaz_s">Сохранить заказ на компьютер</a>
+	<a href="<?=Url::to(['/store/order/print','key'=>$model->secretKey])?>" class="save_zakaz_s">Сохранить заказ на компьютер</a>
 </div>
+<?php endif?>

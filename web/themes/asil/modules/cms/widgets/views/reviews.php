@@ -12,10 +12,14 @@ use yii\widgets\ActiveForm;
     <span class="title_z">Форма отзыва</span>
     <?php $form = ActiveForm::begin([
         'action' => ['/cms/reviews/create'],
+        'enableAjaxValidation'=>true,
         'fieldConfig' => [
             'template' => '{input}{error}',
             'inputOptions' => ['class' => 'modal_f'],
         ],
+        'options'=>[
+            'enctype'=>'multipart/form-data',
+        ]
     ]) ?>
     <?= $form->field($model, 'file')->fileInput() ?>
     <?= $form->field($model, 'name')->textInput(['placeholder' => 'Имя']) ?>
