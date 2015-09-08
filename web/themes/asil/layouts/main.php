@@ -82,10 +82,11 @@ $theme = $this->theme;
 						
                     </div>
                     <?php endforeach?>
-					<div class="back_otziv">
-						<?=\app\modules\cms\widgets\Reviews::widget()?><!-- ссылка с href="#modal1", откроет окно с  id = modal1-->
-					</div>
+					
                 </div>
+				<div class="back_otziv">
+					<?=\app\modules\cms\widgets\Reviews::widget()?><!-- ссылка с href="#modal1", откроет окно с  id = modal1-->
+				</div>
             </div>
 			<div class="sertifikat">
 				<div class="sertifikat_title">
