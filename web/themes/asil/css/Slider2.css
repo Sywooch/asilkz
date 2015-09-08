@@ -305,6 +305,7 @@ span.date {
     position: relative;
     padding-bottom: 15px;
 }
+
 .sliderContent {
   float: left;
   width: 283px;
@@ -369,4 +370,25 @@ background-position:0 -11px;
 .sliderContent a {
 outline:none;
 }
-
+#modal3 button {
+    background-image: url(../img/button.png);
+    width: 142px;
+    height: 35px;
+    background-size: 100% 35px;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    margin-top: 12px;
+    text-align: center;
+    margin: 0 auto;
+    border: none;
+    color: #fff;
+    font-family: "PTSansRegular";
+}
+#reviews-content {
+    width: 246px;
+    font-family: "PTSansRegular";
+    height: 51px;
+    text-indent: 7px;
+    font-size: 14px;
+}
