@@ -80,7 +80,7 @@ $theme = $this->theme;
                         </div>
                         <p><?=$item->content?></p>
 						<div class="back_otziv">
-							<a href="#modal2" class="open_modal otkrit" >Осатвить отзыв</a><!-- ссылка с href="#modal1", откроет окно с  id = modal1-->
+							<?=\app\modules\cms\widgets\Reviews::widget()?><!-- ссылка с href="#modal1", откроет окно с  id = modal1-->
 						</div>
                     </div>
                     <?php endforeach?>
@@ -127,6 +127,7 @@ $theme = $this->theme;
         </div>
     </div>
 </footer>
+    <div id="overlay"></div>
     <?=\app\modules\cms\widgets\Feedback::widget()?>
     <?=\app\modules\store\widgets\OrderForm::widget()?>
     <!-- -->

@@ -21,6 +21,7 @@ use yii\db\ActiveQuery;
  */
 class Reviews extends \yii\db\ActiveRecord
 {
+    public $file;
     const VISIBLE_OFF = 0;
     const VISIBLE_ON = 1;
 
@@ -54,7 +55,11 @@ class Reviews extends \yii\db\ActiveRecord
         return [
             [['age', 'visible'], 'integer'],
             [['name', 'company'], 'string', 'max' => 128],
-            [['content'], 'string', 'max' => 300]
+            [['content'], 'string', 'max' => 300],
+            ['visible','default','value'=>self::VISIBLE_ON],
+
+            [['name','age','company','content'],'required','on'=>'site.create'],
+            [['file'],'file','extensions'=>['jpg','png','gif'],'skipOnEmpty'=>true,'on'=>'site.create'],
         ];
     }
 
@@ -70,6 +75,7 @@ class Reviews extends \yii\db\ActiveRecord
             'company' => Yii::t('app', 'Компания'),
             'content' => Yii::t('app', 'Отзыв'),
             'visible' => Yii::t('app', 'Видимость'),
+            'file' => Yii::t('app', 'Фотография'),
         ];
     }
 

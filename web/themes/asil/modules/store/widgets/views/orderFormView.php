@@ -32,4 +32,3 @@ $theme = $this->theme;
     <button type="submit" name="submit2">Заказать</button>
     <?php ActiveForm::end() ?>
 </div>
-<div id="overlay"></div>

@@ -9,8 +9,12 @@
 namespace app\modules\cms\controllers;
 
 
+use app\modules\cms\models\Image;
 use app\modules\cms\models\Reviews;
 use yii\web\Controller;
+use yii\web\Response;
+use yii\web\UploadedFile;
+use yii\widgets\ActiveForm;
 
 class ReviewsController extends Controller{
 
@@ -20,4 +24,36 @@ class ReviewsController extends Controller{
         return $this->render('index',['items'=>$items]);
     }
 
+    public function actionCreate()
+    {
+        $model = new Reviews();
+        $model->scenario = 'site.create';
+
+        if($model->load($_POST))
+        {
+            $model->file = UploadedFile::getInstance($model, 'file');
+
+            if (\Yii::$app->request->isAjax) {
+                \Yii::$app->response->format = Response::FORMAT_JSON;
+                return ActiveForm::validate($model);
+            }
+
+            if($model->validate())
+            {
+                $model->save();
+
+                if ($model->file) {
+                    $image = new Image();
+                    $image->model = $model::className();
+                    $image->primaryKey = $model->id;
+                    $image->file = $model->file;
+                    $filename = md5($model::className() . $model->id . $image->file->name) . '.' . $image->file->extension;
+                    $image->file->saveAs(Image::FILE_DIROOT . '/' . $filename);
+                    $image->save();
+                }
+            }
+        }
+
+        return $this->redirect(\Yii::$app->request->referrer);
+    }
 }
