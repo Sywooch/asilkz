@@ -46,10 +46,10 @@ class ReviewsController extends Controller{
                     $image = new Image();
                     $image->model = $model::className();
                     $image->primaryKey = $model->id;
-                    $image->file = $model->file;
-                    $filename = md5($model::className() . $model->id . $image->file->name) . '.' . $image->file->extension;
-                    $image->file->saveAs(Image::FILE_DIROOT . '/' . $filename);
-                    $image->save();
+                    $filename = md5($model::className() . $model->id . $model->file->name) . '.' . $model->file->extension;
+                    $image->src = $filename;
+                    $model->file->saveAs(\Yii::getAlias(Image::FILE_DIROOT) . $filename);
+                    $image->save(false);
                 }
             }
         }
