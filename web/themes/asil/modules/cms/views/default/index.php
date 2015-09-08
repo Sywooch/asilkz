@@ -34,7 +34,7 @@ $this->title = Yii::$app->name;
                 <div class="img_slid">
                     <img src="<?=$item->imageSrc('133x93')?>">
                 </div>
-                <span class="date"><?=Yii::$app->formatter->asDate(strtotime($item->dateCreate))?></span>
+                <span class="date"><?= $item->title ?></span>
                 <div class="slid_txt">
                     <p>
                         <?=$item->shortext(300)?>
@@ -74,7 +74,7 @@ $this->title = Yii::$app->name;
                 <div class="img_slid">
                     <img src="<?=$item->imageSrc('139x97')?>">
                 </div>
-                <span class="date"><?=Yii::$app->formatter->asDate(strtotime($item->dateCreate))?></span>
+                <span class="date"><?=$item->title?></span>
                 <div class="slid_txt">
                     <p><?=$item->shortext(300)?></p>
                 </div>
