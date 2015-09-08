@@ -859,3 +859,7 @@ a.open_modal.otkrit {
     font-family: "PTSansRegular";
     border-radius: 4px;
 }
+.back_otziv {
+    clear: both;
+    margin-left: 15px;
+}

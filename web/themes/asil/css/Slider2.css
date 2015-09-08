@@ -299,11 +299,11 @@ span.date {
   top: 56px;
 }
 .slider {
-  float: left;
-  width: 100%;
-  height: 283px;
-  position: relative;
-  padding-bottom: 15px;
+    float: left;
+    width: 100%;
+    height: 326px;
+    position: relative;
+    padding-bottom: 15px;
 }
 .sliderContent {
   float: left;
