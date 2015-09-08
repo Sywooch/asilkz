@@ -385,3 +385,10 @@ outline:none;
     color: #fff;
     font-family: "PTSansRegular";
 }
+#reviews-content {
+    width: 246px;
+    font-family: "PTSansRegular";
+    height: 51px;
+    text-indent: 7px;
+    font-size: 14px;
+}
