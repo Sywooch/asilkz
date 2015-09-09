@@ -631,8 +631,9 @@ ul.vrach.consult li {
 .type_file {
     position: relative;
     height: 36px;
-    margin-top: 45px;
-    margin-bottom: 15px;
+    margin-top: 40px;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 .type_file input[type="file"]{ /* поле type="file" */
 	position: absolute; /* абсолютное позиционирование, чтобы можно было совместить поле и блок с оформлением */
@@ -828,13 +829,12 @@ ul.vrach.consult li {
   height: auto;
 }
 .help-block {
-    font-size: 13px;
+font-size: 13px;
     font-family: "PTSansRegular";
-    margin-top: -14px;
-    height: 30px;
-    line-height: 30px;
     overflow: hidden;
+    position: relative;
     text-indent: 0px;
+    top: -10px;
     text-align: left;
 }
 a.open_modal.otkrit {
