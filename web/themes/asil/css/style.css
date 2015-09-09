@@ -655,14 +655,15 @@ ul.vrach.consult li {
     z-index: 1;
 }
 .inputFileVal { /* поле, в котором будет показан результат выбора файла */
-	position: absolute;
-	text-indent: 10px;
-	top: 3px;
-	left: 5px;
-	z-index: 2;
-	width: 175px;
-	background: none;
-	border: none;
+    position: absolute;
+    text-indent: 10px;
+    top: 0px;
+    left: 5px;
+    z-index: 2;
+    height: 35px;
+    width: 163px;
+    background: none;
+    border: none;
 }
 
 #modal1 button {
