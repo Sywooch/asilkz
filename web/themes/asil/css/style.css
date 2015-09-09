@@ -629,9 +629,10 @@ ul.vrach.consult li {
     margin: 0px auto 14px;
 }
 .type_file {
-	position: relative;
-	height: 26px;
-	margin-top:15px;
+    position: relative;
+    height: 36px;
+    margin-top: 45px;
+    margin-bottom: 15px;
 }
 .type_file input[type="file"]{ /* поле type="file" */
 	position: absolute; /* абсолютное позиционирование, чтобы можно было совместить поле и блок с оформлением */
@@ -645,13 +646,13 @@ ul.vrach.consult li {
 	width: 267px; /* задаем ширину для всех браузеров. Для firefox подбираем значение параметра size в поле */
 }
 .fonTypeFile { /* блок с оформлением */
-	width: 267px; /* размеры картинки для оформления */
-	height: 26px;
-	background: url(img/input.png); /* картинка оформления поля */
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1; /* z-слой меньше, чем у поля выбора файла */
+    width: 250px;
+    height: 36px;
+    background: url(../img/input.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 .inputFileVal { /* поле, в котором будет показан результат выбора файла */
 	position: absolute;
