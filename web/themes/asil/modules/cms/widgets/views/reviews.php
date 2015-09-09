@@ -25,7 +25,7 @@ use yii\widgets\ActiveForm;
 	<div class="type_file">
 		<?= $form->field($model, 'file')->fileInput(['onchange'=>'document.getElementById("fileName").value=this.value']) ?>
 		<div class="fonTypeFile"></div>
-		<input type="text" class="inputFileVal" readonly="readonly" id="fileName" />
+		<input type="text" class="inputFileVal" placeholder="выберите файл" readonly="readonly" id="fileName" />
 	</div>
     <?= $form->field($model, 'name')->textInput(['placeholder' => 'Имя']) ?>
     <?= $form->field($model, 'age')->textInput(['placeholder' => 'Возраст']) ?>
