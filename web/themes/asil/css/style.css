@@ -34,11 +34,12 @@
   font-family: "PTSansBold";
   color: #Fff;
   font-size: 18px;
-  margin-bottom: 1px;
+  margin-bottom: 5px;
   display: inline-block;
 }
-
-
+.open_modal {
+    cursor: pointer;
+}
 .zvonok {
   margin-top: -71px;
 }
@@ -626,7 +627,7 @@ ul.vrach.consult li {
     background-repeat: no-repeat;
     background-position: 136px;
     display: block;
-    margin: 0px auto 14px;
+    margin: 0px auto 20px;
 }
 .type_file {
     position: relative;
