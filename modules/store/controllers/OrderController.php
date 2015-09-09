@@ -54,4 +54,13 @@ class OrderController extends Controller{
         return $this->render('view',['model'=>$model]);
     }
 
+    public function actionPrint($key)
+    {
+        $this->layout = '//print';
+        $model = Order::findBySecretKey($key);
+        if (!$model) {
+            throw new HttpException('404', 'Заказ не найден');
+        }
+        return $this->render('view', ['model' => $model]);
+    }
 }

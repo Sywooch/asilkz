@@ -16,4 +16,7 @@ $this->params['breadcrumbs']=[
 <div class="text">
     <img src="<?= $item->image->resize('222x141') ?>"/>
     <p><?=$item->description?></p>
+    <div class="hypercomnnent-block">
+        <?=Yii::$app->params['hypercomments']?>
+    </div>
 </div>

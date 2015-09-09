@@ -51,7 +51,7 @@ use yii\widgets\ActiveForm;
                         <tbody>
                         <?php foreach($model->items as $item):?>
                         <tr>
-                            <td><?=Html::img($item->product->image->resize('75x75'))?></td>
+                            <td><?=Html::img($item->product->imageSrc('75x75'))?></td>
                             <td><?=$item->product->title?></td>
                             <td><?=$item->quantity?> шт.</td>
                         </tr>

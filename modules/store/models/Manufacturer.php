@@ -2,6 +2,7 @@
 
 namespace app\modules\store\models;
 
+use app\modules\cms\components\CmsBehavior;
 use Yii;
 use app\modules\cms\components\TranslitBehavior;
 use app\modules\cms\models\Image;
@@ -60,6 +61,9 @@ class Manufacturer extends \yii\db\ActiveRecord
         return [
             'translit' => [
                 'class' => TranslitBehavior::className(),
+            ],
+            'cms'=>[
+                'class'=>CmsBehavior::className(),
             ],
         ];
     }
