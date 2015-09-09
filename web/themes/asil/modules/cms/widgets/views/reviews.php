@@ -23,7 +23,7 @@ use yii\widgets\ActiveForm;
     ]) ?>
    
 	<div class="type_file">
-		<?= $form->field($model, 'file')->fileInput() ?>
+		<?= $form->field($model, 'file')->fileInput(['onchange'=>'document.getElementById("fileName").value=this.value']) ?>
 		<div class="fonTypeFile"></div>
 		<input type="text" class="inputFileVal" readonly="readonly" id="fileName" />
 	</div>
