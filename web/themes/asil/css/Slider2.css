@@ -302,7 +302,7 @@ span.date {
 .slider {
     float: left;
     width: 100%;
-    height: 326px;
+    height: 286px;
     position: relative;
     padding-bottom: 15px;
 }
@@ -310,7 +310,7 @@ span.date {
 .sliderContent {
   float: left;
   width: 283px;
-  height: 272px;
+  height: 232px;
   clear: both;
   position: relative;
   overflow: hidden;
@@ -350,7 +350,7 @@ background-position:-44px -44px;
 .sliderContent .item {
   position: absolute;
   width: 260px;
-  height: 240px;
+  height: 193px;
   overflow: hidden;
   background: #fff;
   padding: 10px;
