@@ -253,10 +253,11 @@ span.date {
   display: inline-block;
   margin-bottom: 10px;
 }
+
 .slid_txt {
   width: 100%;
   overflow: hidden;
-  height: 72px;
+  height: 92px;
   margin-bottom: 10px;
 }
 .slid_txt p {
