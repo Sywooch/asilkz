@@ -21,7 +21,12 @@ use yii\widgets\ActiveForm;
             'enctype'=>'multipart/form-data',
         ]
     ]) ?>
-    <?= $form->field($model, 'file')->fileInput() ?>
+   
+	<div class="type_file">
+		<?= $form->field($model, 'file')->fileInput() ?>
+		<div class="fonTypeFile"></div>
+		<input type="text" class="inputFileVal" readonly="readonly" id="fileName" />
+	</div>
     <?= $form->field($model, 'name')->textInput(['placeholder' => 'Имя']) ?>
     <?= $form->field($model, 'age')->textInput(['placeholder' => 'Возраст']) ?>
     <?= $form->field($model, 'company')->textInput(['placeholder' => 'Компания']) ?>
