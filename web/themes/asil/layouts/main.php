@@ -31,8 +31,8 @@ $currentUrl = Yii::$app->request->url;
                     <div class="logo">
                         <a href="/"><img src="<?=$theme->getUrl('img/logo.png')?>" alt="Асыл"/></a>
                     </div>
-                    <h1>Втеренарные препараты для здоровья,</br>
-                        для продовольствия и для планеты..
+                    <h1>Ветеренарные препараты для здоровья,</br>
+                        для продовольствия и для планеты...
                     </h1>
 
                     <div class="zvonok_open rel">
@@ -125,7 +125,7 @@ $currentUrl = Yii::$app->request->url;
                 <a href="/"><img src="<?=$theme->getUrl('img/logo.png')?>" alt="Асыл"/></a>
             </div>
             <div class="foot fl_r">
-                <p>Разработано в <a href="astanacreative.kz">AstanaCreative.kz</a></p>
+                <p>Разработано в <a target="_blank" href="http://astanacreative.kz">AstanaCreative.kz</a></p>
             </div>
         </div>
     </div>
