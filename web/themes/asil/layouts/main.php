@@ -8,6 +8,7 @@ use \yii\helpers\Url;
 
 AppAsset::register($this);
 $theme = $this->theme;
+$currentUrl = Yii::$app->request->url;
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -45,14 +46,14 @@ $theme = $this->theme;
         <div class="cr ">
             <div class="menu">
                 <ul>
-                    <li class="glav"><a href="/">ГЛАВНАЯ </a></li>
-                    <li class="comp"><a href="<?=Url::to(['/cms/default/page','path'=>'o-kompanii'])?>">О КОМПАНИИ </a></li>
-                    <li class="client"><a href="<?=Url::to(['/cms/default/page','path'=>'optovim-klientam'])?>">ОПТОВЫМ КЛИЕНТАМ </a></li>
-                    <li class="akci"><a href="<?=Url::to(['/cms/article/list','type'=>'stock'])?>">АКЦИИ </a></li>
-                    <li class="oplata"><a href="<?=Url::to(['/cms/default/page','path'=>'oplata-i-dostavka'])?>">ОПЛАТА И ДОСТАВКА </a></li>
-                    <li class="prod"><a href="<?=Url::to(\app\modules\store\models\Category::getFirstLink())?>"> ПРОДУКЦИЯ </a></li>
+                    <li class="glav <?php if ($currentUrl == '/') echo 'active' ?>"><a href="/">ГЛАВНАЯ </a></li>
+                    <li class="comp <?php if ($currentUrl == '/page/o-kompanii') echo 'active' ?>"><a href="<?=Url::to(['/cms/default/page','path'=>'o-kompanii'])?>">О КОМПАНИИ </a></li>
+                    <li class="client <?php if ($currentUrl == '/page/optovim-klientam') echo 'active' ?>"><a href="<?=Url::to(['/cms/default/page','path'=>'optovim-klientam'])?>">ОПТОВЫМ КЛИЕНТАМ </a></li>
+                    <li class="akci <?php if (Yii::$app->controller->route == 'cms/article/list' && Yii::$app->request->get('type')==\app\modules\cms\models\Article::TYPE_STOCK_ALIAS) echo 'active' ?>"><a href="<?=Url::to(['/cms/article/list','type'=>'stock'])?>">АКЦИИ </a></li>
+                    <li class="oplata <?php if ($currentUrl == '/page/oplata-i-dostavka') echo 'active' ?>"><a href="<?=Url::to(['/cms/default/page','path'=>'oplata-i-dostavka'])?>">ОПЛАТА И ДОСТАВКА </a></li>
+                    <li class="prod <?php if (Yii::$app->controller->route == 'store/category/view') echo 'active' ?>"><a href="<?=Url::to(\app\modules\store\models\Category::getFirstLink())?>"> ПРОДУКЦИЯ </a></li>
                     <li class="stat"><a href="<?=Url::to(['/cms/article/list','type'=>'article'])?>"> СТАТЬИ </a></li>
-                    <li class="cont"><a href="<?=Url::to(['/cms/default/page','path'=>'kontakti'])?>"> КОНТАКТЫ </a></li>
+                    <li class="cont <?php if ($currentUrl == '/page/kontakti') echo 'active' ?>"><a href="<?=Url::to(['/cms/default/page','path'=>'kontakti'])?>"> КОНТАКТЫ </a></li>
                 </ul>
             </div>
         </div>
