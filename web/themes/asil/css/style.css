@@ -169,14 +169,14 @@ margin-bottom:0px;
     font-family: "PTSansBold";
     font-size: 18px;
     color: #4d4d4d;
-    line-height: 30px;
+    line-height: 28px;
     display: inline-block;
 }
 .title.rel span {
 	float: right;
 	font-family: "PTSansRegular";
 	font-size: 14px;
-	line-height: 18px;
+	line-height: 20px;
 	color: #4d4d4d;
 	position: relative;
 	top: 5px;
@@ -189,7 +189,7 @@ margin-bottom:0px;
     font-family: "PTSansRegular";
     font-size: 17px;
     color: #4d4d4d;
-    line-height: 24px;
+    line-height: 28px;
     cursor: pointer;
     text-decoration: underline;
 }
@@ -780,7 +780,7 @@ ul.vrach.consult li {
     line-height: 15px;
 }
 .search a {
-    width: 142px;
+width: 142px;
     font-family: "PTSansRegular";
     font-size: 19px;
     line-height: 37px;
@@ -788,8 +788,9 @@ ul.vrach.consult li {
     border: none;
     display: inline-block;
     border-radius: 4px;
+    margin-left: 10px;
     float: right;
-	margin-left:10px
+    margin-left: 10px;
     background-image: url(../img/button.png);
     color: #fff;
 }
