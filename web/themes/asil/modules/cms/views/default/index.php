@@ -35,10 +35,8 @@ $this->title = Yii::$app->name;
                     <img src="<?=$item->imageSrc('133x93')?>">
                 </div>
                 <span class="date"><?= $item->title ?></span>
-                <div class="slid_txt">
-                    <p>
+                <div class="slid_txt">       
                         <?=$item->shortext(300)?>
-                    </p>
                 </div>
                 <a href="<?=Url::to(['/cms/article/view','type'=>'article','alias'=>$item->alias])?>">Подробнее...</a>
             </div>
@@ -76,7 +74,7 @@ $this->title = Yii::$app->name;
                 </div>
                 <span class="date"><?=$item->title?></span>
                 <div class="slid_txt">
-                    <p><?=$item->shortext(300)?></p>
+                    <?=$item->shortext(300)?>
                 </div>
                 <a href="<?=Url::to(['/cms/article/view','type'=>'news','alias'=>$item->alias])?>">Подробнее...</a>
             </div>

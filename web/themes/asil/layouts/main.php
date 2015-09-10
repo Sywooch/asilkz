@@ -124,7 +124,7 @@ $theme = $this->theme;
                 <a href="/"><img src="<?=$theme->getUrl('img/logo.png')?>" alt="Асыл"/></a>
             </div>
             <div class="foot fl_r">
-                <p>Разработано в <a href="astanacreative.kz">AstanaCreative.kz</a></p>
+                <p>Разработано в <a target="_blank" href="http://astanacreative.kz">AstanaCreative.kz</a></p>
             </div>
         </div>
     </div>
