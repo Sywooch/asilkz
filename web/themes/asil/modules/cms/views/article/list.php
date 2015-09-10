@@ -31,7 +31,11 @@ use yii\widgets\ActiveForm;
                 <div class="img_slid">
                     <img src="<?= $row->imageSrc('208x145')?>"/>
                 </div>
-                <div class="title_stati"><?= $row->title?></div>
+                <div class="title_stati">
+                    <a href="<?= $row->path ?>">
+                    <?= $row->title?>
+                    </a>
+                </div>
                 <span class="date"><?=\Yii::$app->formatter->asDate(strtotime($row->dateCreate))?></span>
                 <div class="slid_txt">
                     <p><?= $row->shortext(100)?></p>
