@@ -9,6 +9,12 @@ $this->title = $item->typeView;
 
 <div class="title rel">
     <h2><?=$this->title?></h2>
+	<div class="search">
+        <form action="/store/category/view" method="get">
+		<input type="hidden" name="alias" value="antibiotiki"> 
+		<input name="q" maxlength="200" type="search" class="input_st" placeholder="Поиск..." value="">
+        </form>   
+	</div>
 </div>
 <div class="text">
     <ul  class="statii">
