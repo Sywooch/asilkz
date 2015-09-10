@@ -17,6 +17,7 @@ class ArticleController extends Controller{
 
     public function actionList($type)
     {
+        $q = \Yii::$app->request->get('q');
         $item = new Article();
         $typeId = Article::getTypeIdByAlias($type);
         if(!$typeId)
@@ -24,8 +25,13 @@ class ArticleController extends Controller{
             throw new HttpException(404,'Категория статей не найдена');
         }
         $item->type = $typeId;
-        $items = Article::find()->type($type)->all();
-        return $this->render('list',['items'=>$items,'item'=>$item]);
+        $article = Article::find()->type($type);
+        if($q)
+        {
+         $article->andWhere(['like','title',$q]);
+        }
+        $items = $article->all();
+        return $this->render('list',['items'=>$items,'item'=>$item, 'q' => $q,'type'=>$type]);
     }
 
     public function actionView($type,$alias)

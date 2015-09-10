@@ -5,31 +5,38 @@
  * @var $items \app\modules\cms\models\Article[]
  */
 $this->title = $item->typeView;
+use yii\widgets\ActiveForm;
 ?>
 
 <div class="title rel">
     <h2><?=$this->title?></h2>
+
+    <?php if($item->type == \app\modules\cms\models\Article::TYPE_ARTICLE):?>
 	<div class="search">
-        <form action="/store/category/view" method="get">
-		<input type="hidden" name="alias" value="antibiotiki"> 
-		<input name="q" maxlength="200" type="search" class="input_st" placeholder="Поиск..." value="">
-        </form>   
+        <?php $form = ActiveForm::begin([
+            'action'=>['/cms/article/list','type'=>$type],
+            'method'=>'get',
+        ])?>
+        <?=\yii\helpers\Html::textInput('q',$q,['type'=>'search','placeholder'=>'Поиск...'])?>
+        <?php ActiveForm::end()?>
 	</div>
+    <?php endif?>
+
 </div>
 <div class="text">
     <ul  class="statii">
-        <?php foreach($items as $item):?>
+        <?php foreach($items as $row):?>
         <li>
             <div class="slid_one">
                 <div class="img_slid">
-                    <img src="<?=$item->image->resize('208x145')?>"/>
+                    <img src="<?= $row->imageSrc('208x145')?>"/>
                 </div>
-                <div class="title_stati"><?=$item->title?></div>
-                <span class="date"><?=\Yii::$app->formatter->asDate(strtotime($item->dateCreate))?></span>
+                <div class="title_stati"><?= $row->title?></div>
+                <span class="date"><?=\Yii::$app->formatter->asDate(strtotime($row->dateCreate))?></span>
                 <div class="slid_txt">
-                    <p><?=$item->shortext(100)?></p>
+                    <p><?= $row->shortext(100)?></p>
                 </div>
-                <a href="<?=$item->path?>">Подробнее...</a>
+                <a href="<?= $row->path?>">Подробнее...</a>
             </div>
         </li>
         <?php endforeach?>
