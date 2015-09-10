@@ -34,11 +34,11 @@ $this->title = Yii::$app->name;
                 <div class="img_slid">
                     <img src="<?=$item->imageSrc('133x93')?>">
                 </div>
-                <span class="date"><?= $item->title ?></span>
+                <a href="<?= $item->path ?>"><span class="date"><?= $item->title ?></span></a>
                 <div class="slid_txt">       
                         <?=$item->shortext(300)?>
                 </div>
-                <a href="<?=Url::to(['/cms/article/view','type'=>'article','alias'=>$item->alias])?>">Подробнее...</a>
+                <a href="<?= $item->path ?>">Подробнее...</a>
             </div>
         </div>
         <?php endforeach?>
@@ -53,7 +53,11 @@ $this->title = Yii::$app->name;
 <div class="text">
     <?php foreach($items as $item):?>
     <div id="owl-demo2" class="owl-carousel akcii">
-        <div class="item"><img src="<?=$item->imageSrc('201x141')?>" alt="Owl Image"></div>
+        <div class="item">
+            <a href="<?= $item->path ?>">
+            <img src="<?=$item->imageSrc('201x141')?>" alt="Owl Image">
+                </a>
+        </div>
         <?php endforeach?>
     </div>
 </div>
@@ -72,11 +76,11 @@ $this->title = Yii::$app->name;
                 <div class="img_slid">
                     <img src="<?=$item->imageSrc('139x97')?>">
                 </div>
-                <span class="date"><?=$item->title?></span>
+                <a href="<?= $item->path ?>"><span class="date"><?=$item->title?></span></a>
                 <div class="slid_txt">
                     <?=$item->shortext(300)?>
                 </div>
-                <a href="<?=Url::to(['/cms/article/view','type'=>'news','alias'=>$item->alias])?>">Подробнее...</a>
+                <a href="<?= $item->path ?>">Подробнее...</a>
             </div>
         </div>
         <?php endforeach?>
