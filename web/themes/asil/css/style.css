@@ -389,8 +389,11 @@ span.name_pr {
   color: #4d4d4d;
   font-size: 16px;
 }
-.foot.fl_r a:hover{
+.foot.fl_r a{
 text-decoration:underline;
+}
+.foot.fl_r a:hover{
+	color: #69a118;
 }
 .foot.fl_r a {
   font-family: "PTSansItalic";

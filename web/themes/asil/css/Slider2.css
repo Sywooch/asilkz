@@ -370,14 +370,14 @@ background-position:0 -11px;
 .sliderContent a {
 outline:none;
 }
-.a_heading{
+.slid_one .a_heading{
 	color: #69a118;
     font-size: 16px;
     font-family: 'PtSansBold';
     display: inline-block;
     margin-bottom: 10px;
 }
-.a_heading:hover{
+.slid_one .a_heading:hover{
 	text-decoration:underline;
 }
 #modal3 button {
