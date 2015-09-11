@@ -296,7 +296,7 @@ ul.pord_spisok li {
 }
 .img_pr {
     width: 84px;
-    height: 100px;
+    height: 86px;
     margin-right: 12px;
     float: left;
 }
@@ -429,7 +429,7 @@ text-decoration:underline;
     line-height: 18px;
     color: #4d4d4d;
     text-align: justify;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 .etc {
     height: 30px;
@@ -449,7 +449,7 @@ ul.cont {
 }
 .text img {
   float: left;
-  margin: 5px 12px 0px 0;
+  margin: 5px 15px 0px 0;
   border: 1px solid #ccc;
 }
 ul.vrach {
@@ -551,11 +551,7 @@ ul.vrach.consult li {
 .statii li:nth-child(3n) {
   margin-right: 0px;
 }
-.title_stati {
-    font-family: "PTSansBold";
-    font-size: 17px;
-    margin-bottom: 10px;
-}
+
 .statii li span {
   float: right;
 }

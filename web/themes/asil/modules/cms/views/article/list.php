@@ -32,7 +32,7 @@ use yii\widgets\ActiveForm;
                     <img src="<?= $row->imageSrc('208x145')?>"/>
                 </div>
                 <div class="title_stati">
-                    <a href="<?= $row->path ?>">
+                    <a class="a_heading" href="<?= $row->path ?>">
                     <?= $row->title?>
                     </a>
                 </div>

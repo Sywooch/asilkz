@@ -240,7 +240,7 @@ ul.carousel.pisma.jcarousel-list.jcarousel-list-horizontal img {
 .img_slid {
   width: 100%;
   overflow: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .img_slid img {
   width: 100%;
@@ -367,9 +367,18 @@ margin-left:-45px;
 .sliderBullets .active {
 background-position:0 -11px;
 }
-
 .sliderContent a {
 outline:none;
+}
+.a_heading{
+	color: #69a118;
+    font-size: 16px;
+    font-family: 'PtSansBold';
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.a_heading:hover{
+	text-decoration:underline;
 }
 #modal3 button {
     background-image: url(../img/button.png);
