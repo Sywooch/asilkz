@@ -38,7 +38,7 @@ $this->title = Yii::$app->name;
                 <div class="slid_txt">       
                         <?=$item->shortext(300)?>
                 </div>
-                <a href="<?= $item->path ?>">Подробнее...</a>
+                <a class="etc_a" href="<?= $item->path ?>">Подробнее...</a>
             </div>
         </div>
         <?php endforeach?>
