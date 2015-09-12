@@ -40,7 +40,7 @@ use yii\widgets\ActiveForm;
                 <div class="slid_txt">
                     <p><?= $row->shortext(100)?></p>
                 </div>
-                <a href="<?= $row->path?>">Подробнее...</a>
+                <a class="etc" href="<?= $row->path?>">Подробнее...</a>
             </div>
         </li>
         <?php endforeach?>

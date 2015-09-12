@@ -34,7 +34,6 @@ $currentUrl = Yii::$app->request->url;
                     <h1>Ветеренарные препараты для здоровья,</br>
                         для продовольствия и для планеты...
                     </h1>
-
                     <div class="zvonok_open rel">
                         <span>+ 7 (701) 376 70 37</span>
                         <a href="#modal1" class="open_modal"><img src="<?=$theme->getUrl('img/zvonok.png')?>"/></a><!-- ссылка с href="#modal1", откроет окно с  id = modal1-->
@@ -65,7 +64,6 @@ $currentUrl = Yii::$app->request->url;
 
             <?php if( ($items = \app\modules\cms\models\Reviews::getAll()) ):?>
             <h3>Отзывы</h3>
-
             <div class="slider slider2">
                 <div class="sliderContent">
                     <?php foreach($items as $item):?>
