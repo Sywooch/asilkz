@@ -1,12 +1,12 @@
 .head {
-  background-image: url(../img/head_bg.jpg);
-  height: 367px;
-  margin-bottom: 11px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  overflow: hidden;
+background-image: url(../img/head_bg.jpg);
+    height: 367px;
+    margin-bottom: 11px;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1900px;
+    min-width: 1020px;
+    overflow: hidden;
 }
 .top_line {
   width: 100%;
